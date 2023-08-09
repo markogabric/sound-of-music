@@ -1,7 +1,8 @@
 import './App.css';
-import Navbar from './components/navbar';
-import Hero from './components/hero';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 import GlobalStyles from './styles/GlobalStyles';
+import FeaturedGrid from './cards/FeaturedGrid';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="text-center font-display p-8">
         <Navbar />
         <Hero />
+        <FeaturedGrid />
       </div>
     </>
   );
