@@ -3,6 +3,10 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import GlobalStyles from './styles/GlobalStyles';
 import FeaturedGrid from './cards/FeaturedGrid';
+import Footer from './components/Footer';
+import Testimonail from './components/Testimonail';
+import FAQ from './components/FAQ';
+import AboutUsPage from './pages/AboutUsPage';
 
 function App() {
   return (
@@ -12,6 +16,10 @@ function App() {
         <Navbar />
         <Hero />
         <FeaturedGrid />
+        <Testimonail />
+        <FAQ />
+        <AboutUsPage />
+        <Footer />
       </div>
     </>
   );

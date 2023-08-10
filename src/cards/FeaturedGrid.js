@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import tw from "twin.macro";
-
-import { css } from "styled-components/macro";
 import styled from "styled-components";
 
 import data from '../products.json';
 
 const Container = tw.div`relative`;
-const ContentWithPaddingXl = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
+const ContentWithPaddingXl = tw.div`max-w-screen-xl mx-auto py-20 lg:py-10`;
 const HeadingRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
-const Heading = tw.h2`text-4xl sm:text-5xl font-black tracking-wide text-center`
+const Heading = tw.h2`text-4xl sm:text-5xl font-black tracking-wide text-center pr-8`;
+const HeadingItems = tw.div`flex justify-between`;
 
 const TabsControl = tw.div`flex flex-wrap bg-gray-200 px-2 py-2 rounded leading-none mt-12 xl:mt-0`;
 
@@ -23,15 +22,16 @@ const TabControl = styled.div`
   }
 `;
 
-const TabContent = tw(motion.div)`bg-gray-200 mt-6 flex justify-evenly flex-wrap sm:-mr-10 md:-mr-6 lg:-mr-12 pb-10`;
+const TabContent = tw(motion.div)`bg-gray-200 mt-6 flex justify-evenly flex-wrap pb-10`;
 
 const CardText = tw.div`p-4 text-gray-900`;
 const CardTitle = tw.h5`text-lg font-semibold group-hover:text-primary-500 truncate`;
-const CardContent = tw.p`mt-1 text-sm font-medium text-gray-600`;
+const CardContent = tw.p`mt-1 text-sm font-medium text-gray-600 truncate`;
 const CardPrice = tw.p`mt-4 text-xl font-bold`;
+const PrimaryButton = tw.button`font-bold px-8 lg:px-10 py-2 my-2 rounded bg-primary-500 text-gray-100 hover:shadow-outline focus:outline-none transition duration-300`;
 
-const CardContainer = tw.div`mt-10 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 sm:px-10 md:px-6 lg:px-12`;
-const Card = tw(motion.a)`bg-gray-300 rounded block max-w-xs mx-auto sm:max-w-none sm:mx-0`;
+const CardContainer = tw.div`mt-10 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 sm:px-10 md:px-6 lg:px-8`;
+const Card = tw(motion.a)`bg-white rounded block max-w-xs mx-auto sm:max-w-none sm:mx-0 min-w-[200px] min-h-[400px]`;
 
 function FeaturedGrid() {
     const tabs = getTabsFromProducts()
@@ -42,9 +42,12 @@ function FeaturedGrid() {
         <Container>
             <ContentWithPaddingXl>
                 <HeadingRow>
-                    <Heading>
-                        Featured items
-                    </Heading>
+                    <HeadingItems>
+                        <Heading>
+                            Featured Items
+                        </Heading>
+                        <PrimaryButton>View All Products</PrimaryButton>
+                    </HeadingItems>
                     <TabsControl>
                         {Object.keys(tabs).map((tabName, index) => (
                             <TabControl key={index} active={activeTab === tabName} onClick={() => setActiveTab(tabName)}>
@@ -74,12 +77,13 @@ function FeaturedGrid() {
                     >
                         {tabs[tabKey].map((card, index) => (
                             <CardContainer key={index}>
-                                <Card className="group" href={card.url}>
-                                        <img src="https://i.imgur.com/sqnFKhP.jpg"></img>
+                                <Card className="group" href="/#">
+                                    <img src={card.image_src} alt={card.title}></img>
                                     <CardText>
                                         <CardTitle>{card.title}</CardTitle>
                                         <CardContent>{card.description}</CardContent>
                                         <CardPrice>{card.price}</CardPrice>
+                                        <PrimaryButton>View Details</PrimaryButton>
                                     </CardText>
                                 </Card>
                             </CardContainer>
@@ -93,8 +97,8 @@ function FeaturedGrid() {
 
 const getTabsFromProducts = () => {
     const tabs = {}
-    tabs["Headphones"] = data.products.filter(product => product.category == "headphones")
-    tabs["Amplifiers"] = data.products.filter(product => product.category == "amplifiers")
+    tabs["Headphones"] = data.products.filter(product => product.category === "headphones").slice(0, 4);
+    tabs["Amplifiers"] = data.products.filter(product => product.category === "amplifiers").slice(0, 4);
 
     return tabs
 }

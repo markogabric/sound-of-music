@@ -6,8 +6,8 @@
         "description": "Clear Sound",
         "category": "headphones",
         "manufacturer": "Sennheiser",
-        "price": "$1,500",
-        "image_src": "../images/1001.jpg",
+        "price": "$1,499",
+        "image_src": "https://i.imgur.com/sqnFKhP.jpg",
         "information": "The Sennheiser HD 800 S is an open-back over-ear headphone renowned for its outstanding soundstage and clarity. It offers audiophile-grade performance and excellent comfort, making it a top choice for discerning listeners.",
         "specifications": {
           "type": "Open-back",
@@ -24,8 +24,8 @@
         "description": "Detailed Clarity",
         "category": "headphones",
         "manufacturer": "Audeze",
-        "price": "$3,995",
-        "image_src": "../images/1002.jpg",
+        "price": "$3,999",
+        "image_src": "https://i.imgur.com/PLt57U9.jpg",
         "information": "The Audeze LCD-4 is a top-of-the-line planar magnetic headphone that delivers unparalleled detail and resolution. Its high-quality craftsmanship and premium materials ensure exceptional sound reproduction, making it a favorite among audio enthusiasts and professionals.",
         "specifications": {
           "type": "Open-back",
@@ -42,8 +42,8 @@
         "description": "Reference Quality",
         "category": "headphones",
         "manufacturer": "Focal",
-        "price": "$3,990",
-        "image_src": "../images/1003.jpg",
+        "price": "$3,999",
+        "image_src": "https://i.imgur.com/bt7vuIa.jpg",
         "information": "Focal's Utopia is an open-back reference headphone designed for audiophiles and music lovers who seek nothing but the best. With its beryllium drivers, it provides exceptional dynamics, accuracy, and an immersive listening experience.",
         "specifications": {
           "type": "Open-back",
@@ -60,8 +60,8 @@
         "description": "Analytical Precision",
         "category": "headphones",
         "manufacturer": "Beyerdynamic",
-        "price": "$599",
-        "image_src": "../images/1004.jpg",
+        "price": "$699",
+        "image_src": "https://i.imgur.com/Ip0nNu9.jpg",
         "information": "The Beyerdynamic DT 1990 Pro is a high-end open-back studio headphone known for its analytical sound signature and exceptional build quality. With its precise sound reproduction, it is an excellent choice for critical listening and professional use.",
         "specifications": {
           "type": "Open-back",
@@ -79,7 +79,7 @@
         "category": "headphones",
         "manufacturer": "Audeze",
         "price": "$1,199",
-        "image_src": "../images/1005.jpg",
+        "image_src": "https://i.imgur.com/kGgTmSg.jpg",
         "information": "The Audeze LCD-X is a planar magnetic headphone that offers a balanced sound signature and high-level performance. Its accurate sound reproduction and comfortable design make it a popular choice among audiophiles and studio professionals.",
         "specifications": {
           "type": "Open-back",
@@ -97,7 +97,7 @@
         "category": "headphones",
         "manufacturer": "Bose",
         "price": "$299",
-        "image_src": "../images/1006.jpg",
+        "image_src": "https://i.imgur.com/fNM34lR.jpg",
         "information": "The Bose QuietComfort 35 II is a popular wireless noise-canceling headphone that delivers superb comfort and excellent sound quality. Its noise-canceling technology ensures a peaceful listening experience in any environment.",
         "specifications": {
           "type": "Closed-back",
