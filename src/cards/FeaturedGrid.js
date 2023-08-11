@@ -4,6 +4,7 @@ import tw from "twin.macro";
 import styled from "styled-components";
 
 import data from '../products.json';
+import ProductCard from "./ProductCard";
 
 const Container = tw.div`relative`;
 const ContentWithPaddingXl = tw.div`max-w-screen-xl mx-auto py-20 lg:py-10`;
@@ -37,6 +38,25 @@ function FeaturedGrid() {
     const tabs = getTabsFromProducts()
     const tabsKeys = Object.keys(tabs);
     const [activeTab, setActiveTab] = useState(tabsKeys[0]);
+
+    const [selectedFilters, setSelectedFilters] = useState({
+        manufacturer: [],
+        type: [],
+        driver_type: [],
+        bluetooth: [],
+        connectivity: []
+    })
+
+    const handleFilterChange = (filterName, value) => {
+        setSelectedFilters({
+            ...selectedFilters,
+            [filterName]: selectedFilters.includes(value)
+                ? selectedFilters[filterName].filter(product => product !== value)
+                : [...selectedFilters[filterName], value]
+        })
+    }
+
+    const productsList = applyFilters(selectedFilters)
 
     return (
         <Container>
@@ -76,17 +96,7 @@ function FeaturedGrid() {
                         animate={activeTab === tabKey ? "current" : "hidden"}
                     >
                         {tabs[tabKey].map((card, index) => (
-                            <CardContainer key={index}>
-                                <Card className="group" href="/#">
-                                    <img src={card.image_src} alt={card.title}></img>
-                                    <CardText>
-                                        <CardTitle>{card.title}</CardTitle>
-                                        <CardContent>{card.description}</CardContent>
-                                        <CardPrice>{card.price}</CardPrice>
-                                        <PrimaryButton>View Details</PrimaryButton>
-                                    </CardText>
-                                </Card>
-                            </CardContainer>
+                            <ProductCard index={index} product={card} />
                         ))}
                     </TabContent>
                 ))}
@@ -97,10 +107,19 @@ function FeaturedGrid() {
 
 const getTabsFromProducts = () => {
     const tabs = {}
-    tabs["Headphones"] = data.products.filter(product => product.category === "headphones").slice(0, 4);
-    tabs["Amplifiers"] = data.products.filter(product => product.category === "amplifiers").slice(0, 4);
+    tabs["Headphones"] = data.products.filter(product => product.category === "Headphones").slice(0, 4);
+    tabs["Amplifiers"] = data.products.filter(product => product.category === "Amplifiers").slice(0, 4);
 
     return tabs
 }
+
+const applyFilters = (filters) => {
+    return data.products.filter(product =>
+        Object.entries(filters).every(([filterType, selectedOptions]) =>
+            selectedOptions.length === 0 || selectedOptions.includes(product.specifications[filterType])
+        )
+    );
+}
+
 
 export default FeaturedGrid

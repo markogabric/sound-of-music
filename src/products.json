@@ -1,445 +1,562 @@
 {
-    "products": [
-      {
-        "id": "1001",
-        "title": "Sennheiser HD 800 S",
-        "description": "Clear Sound",
-        "category": "headphones",
+  "products": [
+    {
+      "id": "1001",
+      "title": "Sennheiser HD 800 S",
+      "description": "Clear Sound",
+      "category": "Headphones",
+      "price": "$1,499",
+      "image_src": "https://i.imgur.com/sqnFKhP.jpg",
+      "information": "The Sennheiser HD 800 S is an open-back over-ear headphone renowned for its outstanding soundstage and clarity. It offers audiophile-grade performance and excellent comfort, making it a top choice for discerning listeners.",
+      "specifications": {
         "manufacturer": "Sennheiser",
-        "price": "$1,499",
-        "image_src": "https://i.imgur.com/sqnFKhP.jpg",
-        "information": "The Sennheiser HD 800 S is an open-back over-ear headphone renowned for its outstanding soundstage and clarity. It offers audiophile-grade performance and excellent comfort, making it a top choice for discerning listeners.",
-        "specifications": {
-          "type": "Open-back",
-          "driver_type": "Dynamic",
-          "impedance": "300 Ohms",
-          "frequency_response": { "min": "4 Hz", "max": "51,000 Hz" },
-          "sensitivity": "102 dB SPL/1V RMS",
-          "bluetooth": "No"
-        }
-      },
-      {
-        "id": "1002",
-        "title": "Audeze LCD-4",
-        "description": "Detailed Clarity",
-        "category": "headphones",
-        "manufacturer": "Audeze",
-        "price": "$3,999",
-        "image_src": "https://i.imgur.com/PLt57U9.jpg",
-        "information": "The Audeze LCD-4 is a top-of-the-line planar magnetic headphone that delivers unparalleled detail and resolution. Its high-quality craftsmanship and premium materials ensure exceptional sound reproduction, making it a favorite among audio enthusiasts and professionals.",
-        "specifications": {
-          "type": "Open-back",
-          "driver_type": "Planar Magnetic",
-          "impedance": "200 Ohms",
-          "frequency_response": { "min": "5 Hz", "max": "20,000 Hz" },
-          "sensitivity": "97 dB/1mW",
-          "bluetooth": "No"
-        }
-      },
-      {
-        "id": "1003",
-        "title": "Focal Utopia",
-        "description": "Reference Quality",
-        "category": "headphones",
-        "manufacturer": "Focal",
-        "price": "$3,999",
-        "image_src": "https://i.imgur.com/bt7vuIa.jpg",
-        "information": "Focal's Utopia is an open-back reference headphone designed for audiophiles and music lovers who seek nothing but the best. With its beryllium drivers, it provides exceptional dynamics, accuracy, and an immersive listening experience.",
-        "specifications": {
-          "type": "Open-back",
-          "driver_type": "Beryllium",
-          "impedance": "80 Ohms",
-          "frequency_response": { "min": "5 Hz", "max": "50,000 Hz" },
-          "sensitivity": "104 dB SPL/1mW",
-          "bluetooth": "No"
-        }
-      },
-      {
-        "id": "1004",
-        "title": "Beyerdynamic DT 1990 Pro",
-        "description": "Analytical Precision",
-        "category": "headphones",
-        "manufacturer": "Beyerdynamic",
-        "price": "$699",
-        "image_src": "https://i.imgur.com/Ip0nNu9.jpg",
-        "information": "The Beyerdynamic DT 1990 Pro is a high-end open-back studio headphone known for its analytical sound signature and exceptional build quality. With its precise sound reproduction, it is an excellent choice for critical listening and professional use.",
-        "specifications": {
-          "type": "Open-back",
-          "driver_type": "Dynamic",
-          "impedance": "250 Ohms",
-          "frequency_response": { "min": "5 Hz", "max": "40,000 Hz" },
-          "sensitivity": "102 dB SPL/1mW",
-          "bluetooth": "No"
-        }
-      },
-      {
-        "id": "1005",
-        "title": "Audeze LCD-X",
-        "description": "Balanced Planar",
-        "category": "headphones",
-        "manufacturer": "Audeze",
-        "price": "$1,199",
-        "image_src": "https://i.imgur.com/kGgTmSg.jpg",
-        "information": "The Audeze LCD-X is a planar magnetic headphone that offers a balanced sound signature and high-level performance. Its accurate sound reproduction and comfortable design make it a popular choice among audiophiles and studio professionals.",
-        "specifications": {
-          "type": "Open-back",
-          "driver_type": "Planar Magnetic",
-          "impedance": "20 Ohms",
-          "frequency_response": { "min": "10 Hz", "max": "50,000 Hz" },
-          "sensitivity": "103 dB/1mW",
-          "bluetooth": "No"
-        }
-      },
-      {
-        "id": "1006",
-        "title": "Bose QuietComfort 35 II",
-        "description": "Wireless Noise-Canceling",
-        "category": "headphones",
-        "manufacturer": "Bose",
-        "price": "$299",
-        "image_src": "https://i.imgur.com/fNM34lR.jpg",
-        "information": "The Bose QuietComfort 35 II is a popular wireless noise-canceling headphone that delivers superb comfort and excellent sound quality. Its noise-canceling technology ensures a peaceful listening experience in any environment.",
-        "specifications": {
-          "type": "Closed-back",
-          "driver_type": "Dynamic",
-          "impedance": "32 Ohms",
-          "frequency_response": { "min": "20 Hz", "max": "20,000 Hz" },
-          "sensitivity": "98 dB SPL/1mW",
-          "bluetooth": "Yes"
-        }
-      },
-      {
-        "id": "1007",
-        "title": "Audio-Technica ATH-M50x",
-        "description": "Professional Monitor",
-        "category": "headphones",
-        "manufacturer": "Audio-Technica",
-        "price": "$149",
-        "image_src": "../images/1007.jpg",
-        "information": "The Audio-Technica ATH-M50x is a professional studio monitor headphone known for its accurate sound reproduction and durability. It is favored by audio engineers and musicians for its exceptional performance and comfort.",
-        "specifications": {
-          "type": "Closed-back",
-          "driver_type": "Dynamic",
-          "impedance": "38 Ohms",
-          "frequency_response": { "min": "15 Hz", "max": "28,000 Hz" },
-          "sensitivity": "99 dB SPL/1mW",
-          "bluetooth": "No"
-        }
-      },
-      {
-        "id": "1008",
-        "title": "Sony WH-1000XM4",
-        "description": "Wireless ANC",
-        "category": "headphones",
-        "manufacturer": "Sony",
-        "price": "$349",
-        "image_src": "../images/1008.jpg",
-        "information": "The Sony WH-1000XM4 is a wireless headphone with advanced noise-canceling technology for immersive sound quality. It offers long battery life and smart features, making it an excellent choice for travel and daily use.",
-        "specifications": {
-          "type": "Closed-back",
-          "driver_type": "Dynamic",
-          "impedance": "47 Ohms",
-          "frequency_response": { "min": "4 Hz", "max": "40,000 Hz" },
-          "sensitivity": "105 dB SPL/1mW",
-          "bluetooth": "Yes"
-        }
-      },
-      {
-        "id": "1009",
-        "title": "Grado SR325e",
-        "description": "Dynamic and Punchy",
-        "category": "headphones",
-        "manufacturer": "Grado",
-        "price": "$295",
-        "image_src": "../images/1009.jpg",
-        "information": "The Grado SR325e is an open-back headphone known for its dynamic and punchy sound signature. With its retro design and high-quality materials, it provides a unique listening experience.",
-        "specifications": {
-          "type": "Open-back",
-          "driver_type": "Dynamic",
-          "impedance": "32 Ohms",
-          "frequency_response": { "min": "18 Hz", "max": "24,000 Hz" },
-          "sensitivity": "99.8 dB SPL/1mW",
-          "bluetooth": "No"
-        }
-      },
-      {
-        "id": "1010",
-        "title": "AKG K712 Pro",
-        "description": "Wide Soundstage",
-        "category": "headphones",
-        "manufacturer": "AKG",
-        "price": "$349",
-        "image_src": "../images/1010.jpg",
-        "information": "The AKG K712 Pro is an open-back headphone that offers a wide and immersive soundstage. It is engineered for precision listening and audiophile-grade sound quality.",
-        "specifications": {
-          "type": "Open-back",
-          "driver_type": "Dynamic",
-          "impedance": "62 Ohms",
-          "frequency_response": { "min": "10 Hz", "max": "39,800 Hz" },
-          "sensitivity": "105 dB SPL/1V RMS",
-          "bluetooth": "No"
-        }
-      },
-      {
-        "id": "1011",
-        "title": "Fostex TH-900 MK2",
-        "description": "Luxurious Sound",
-        "category": "headphones",
-        "manufacturer": "Fostex",
-        "price": "$1,299",
-        "image_src": "../images/1011.jpg",
-        "information": "The Fostex TH-900 MK2 is a high-end closed-back headphone that offers luxurious sound quality and premium craftsmanship. Its biodynamic drivers provide excellent detail and resolution, making it a top choice for audiophiles.",
-        "specifications": {
-          "type": "Closed-back",
-          "driver_type": "Biodynamic",
-          "impedance": "25 Ohms",
-          "frequency_response": { "min": "5 Hz", "max": "45,000 Hz" },
-          "sensitivity": "100 dB/mW",
-          "bluetooth": "No"
-        }
-      },
-      {
-        "id": "1012",
-        "title": "Meze Empyrean",
-        "description": "Natural Reproduction",
-        "category": "headphones",
-        "manufacturer": "Meze",
-        "price": "$2,999",
-        "image_src": "../images/1012.jpg",
-        "information": "The Meze Empyrean is a premium planar magnetic headphone known for its natural and engaging sound reproduction. It features a unique hybrid driver design and high-quality materials for exceptional comfort.",
-        "specifications": {
-          "type": "Open-back",
-          "driver_type": "Planar Magnetic",
-          "impedance": "31.6 Ohms",
-          "frequency_response": { "min": "4 Hz", "max": "110,000 Hz" },
-          "sensitivity": "100 dB/mW",
-          "bluetooth": "No"
-        }
-      },
-      {
-        "id": "1013",
-        "title": "Shure SRH1540",
-        "description": "Rich Bass",
-        "category": "headphones",
-        "manufacturer": "Shure",
-        "price": "$499",
-        "image_src": "../images/1013.jpg",
-        "information": "The Shure SRH1540 is a closed-back headphone with a focus on rich and deep bass response. Its lightweight design and premium Alcantara ear pads ensure comfort during long listening sessions.",
-        "specifications": {
-          "type": "Closed-back",
-          "driver_type": "Dynamic",
-          "impedance": "46 Ohms",
-          "frequency_response": { "min": "5 Hz", "max": "25,000 Hz" },
-          "sensitivity": "99 dB SPL/mW",
-          "bluetooth": "No"
-        }
-      },
-      {
-        "id": "1014",
-        "title": "Hifiman Sundara",
-        "description": "Detailed and Balanced",
-        "category": "headphones",
-        "manufacturer": "Hifiman",
-        "price": "$349",
-        "image_src": "../images/1014.jpg",
-        "information": "The Hifiman Sundara is an open-back planar magnetic headphone known for its detailed and balanced sound signature. It offers excellent clarity and resolution, making it a favorite among audiophiles and critical listeners.",
-        "specifications": {
-          "type": "Open-back",
-          "driver_type": "Planar Magnetic",
-          "impedance": "37 Ohms",
-          "frequency_response": { "min": "6 Hz", "max": "75,000 Hz" },
-          "sensitivity": "94 dB/mW",
-          "bluetooth": "No"
-        }
-      },
-      {
-        "id": "1015",
-        "title": "Audeze LCD-2 Classic",
-        "description": "Rich and Warm",
-        "category": "headphones",
-        "manufacturer": "Audeze",
-        "price": "$799",
-        "image_src": "../images/1015.jpg",
-        "information": "The Audeze LCD-2 Classic is a planar magnetic headphone known for its rich and warm sound signature. It offers a smooth and natural sound reproduction, making it suitable for various genres of music.",
-        "specifications": {
-          "type": "Open-back",
-          "driver_type": "Planar Magnetic",
-          "impedance": "70 Ohms",
-          "frequency_response": { "min": "10 Hz", "max": "50,000 Hz" },
-          "sensitivity": "101 dB/1mW",
-          "bluetooth": "No"
-        }
-      },
-      {
-        "id": "2001",
-        "title": "Schiit Magni 3+",
-        "description": "Versatile Amp",
-        "category": "amplifiers",
-        "manufacturer": "Schiit",
-        "price": "$99",
-        "image_src": "../images/2001.jpg",
-        "information": "The Schiit Magni 3+ is a versatile headphone amplifier that provides clean and powerful output for a wide range of headphones. Its simple and compact design, along with its budget-friendly price, makes it a popular choice among audio enthusiasts.",
-        "specifications": {
-          "type": "Solid State",
-          "output_power": "2.8W RMS per channel (32 Ohms)",
-          "dac_chip": "N/A",
-          "frequency_response": { "min": "20 Hz", "max": "20,000 Hz" },
-          "inputs": ["RCA", "3.5mm"]
-        }
-      },
-      {
-        "id": "2002",
-        "title": "FiiO E10K",
-        "description": "Affordable DAC/Amp",
-        "category": "amplifiers",
-        "manufacturer": "FiiO",
-        "price": "$75",
-        "image_src": "../images/2002.jpg",
-        "information": "The FiiO E10K is an affordable DAC/Amp combo that offers improved audio quality for headphones and speakers. Its compact size and plug-and-play simplicity make it a great entry-level option for those looking to enhance their audio experience.",
-        "specifications": {
-          "type": "DAC/Amp Combo",
-          "output_power": "200mW (32 Ohms)",
-          "dac_chip": "TI PCM5102A",
-          "frequency_response": { "min": "20 Hz", "max": "20,000 Hz" },
-          "inputs": ["USB", "Coaxial"]
-        }
-      },
-      {
-        "id": "2003",
-        "title": "JDS Labs Atom",
-        "description": "Transparent Sound",
-        "category": "amplifiers",
-        "manufacturer": "JDS Labs",
-        "price": "$99",
-        "image_src": "../images/2003.jpg",
-        "information": "The JDS Labs Atom is a headphone amplifier that focuses on transparent and accurate sound reproduction. Its high-quality components and solid build ensure low distortion, making it an ideal choice for discerning listeners and audio professionals.",
-        "specifications": {
-          "type": "Solid State",
-          "output_power": "1W RMS per channel (32 Ohms)",
-          "dac_chip": "N/A",
-          "frequency_response": { "min": "5 Hz", "max": "40,000 Hz" },
-          "inputs": ["RCA", "3.5mm"]
-        }
-      },
-      {
-        "id": "2004",
-        "title": "Audeze Deckard",
-        "description": "Class-A Amplification",
-        "category": "amplifiers",
-        "manufacturer": "Audeze",
-        "price": "$699",
-        "image_src": "../images/2004.jpg",
-        "information": "The Audeze Deckard is a Class-A headphone amplifier with an integrated DAC, providing a high-quality audio experience. Its powerful and clean amplification is tailored to match Audeze headphones, delivering exceptional sound performance.",
-        "specifications": {
-          "type": "DAC/Amp Combo",
-          "output_power": "4W per channel (20 Ohms)",
-          "dac_chip": "AKM AK4490",
-          "frequency_response": { "min": "10 Hz", "max": "100,000 Hz" },
-          "inputs": ["USB", "RCA"]
-        }
-      },
-      {
-        "id": "2005",
-        "title": "Sennheiser HDV 820",
-        "description": "High-End Performance",
-        "category": "amplifiers",
-        "manufacturer": "Sennheiser",
-        "price": "$2,399",
-        "image_src": "../images/2005.jpg",
-        "information": "The Sennheiser HDV 820 is a high-end headphone amplifier designed to complement premium headphones. It offers a transparent and dynamic sound profile, making it an excellent choice for audiophiles who demand the best audio performance.",
-        "specifications": {
-          "type": "Solid State",
-          "output_power": "1000mW (300 Ohms)",
-          "dac_chip": "ESS Sabre32 DAC",
-          "frequency_response": { "min": "0.3 Hz", "max": "100,000 Hz" },
-          "inputs": ["XLR", "RCA", "USB", "Optical", "Coaxial"]
-        }
-      },
-      {
-        "id": "2006",
-        "title": "Chord Mojo",
-        "description": "Portable DAC/Amp",
-        "category": "amplifiers",
-        "manufacturer": "Chord",
-        "price": "$499",
-        "image_src": "../images/2006.jpg",
-        "information": "The Chord Mojo is a portable DAC/Amp that packs impressive audio performance in a small form factor. Its high-resolution sound and versatility make it a go-to choice for audiophiles on the move.",
-        "specifications": {
-          "type": "DAC/Amp Combo",
-          "output_power": "720mW per channel (8 Ohms)",
-          "dac_chip": "Xilinx Artix-7 FPGA",
-          "frequency_response": { "min": "20 Hz", "max": "20,000 Hz" },
-          "inputs": ["USB", "Optical", "Coaxial", "3.5mm"]
-        }
-      },
-      {
-        "id": "2007",
-        "title": "SPL Phonitor XE",
-        "description": "Studio Quality",
-        "category": "amplifiers",
-        "manufacturer": "SPL",
-        "price": "$1,799",
-        "image_src": "../images/2007.jpg",
-        "information": "The SPL Phonitor XE is a studio-quality headphone amplifier with Crossfeed technology for a speaker-like listening experience. It offers precise sound reproduction and a powerful headphone drive for professional use.",
-        "specifications": {
-          "type": "Solid State",
-          "output_power": "2W RMS per channel (32 Ohms)",
-          "dac_chip": "N/A",
-          "frequency_response": { "min": "4 Hz", "max": "480,000 Hz" },
-          "inputs": ["XLR", "RCA", "6.35mm"]
-        }
-      },
-      {
-        "id": "2008",
-        "title": "IFI Audio Pro iDSD",
-        "description": "High-Resolution DAC/Amp",
-        "category": "amplifiers",
-        "manufacturer": "IFI Audio",
-        "price": "$1,899",
-        "image_src": "../images/2008.jpg",
-        "information": "The IFI Audio Pro iDSD is a high-resolution DAC/Amp designed for audiophiles and music professionals. It offers a wide range of connectivity options and supports various audio formats.",
-        "specifications": {
-          "type": "DAC/Amp Combo",
-          "output_power": "4W (16 Ohms)",
-          "dac_chip": "Dual Burr-Brown DAC Chips",
-          "frequency_response": { "min": "0.5 Hz", "max": "500,000 Hz" },
-          "inputs": ["USB", "Optical", "Coaxial", "AES/EBU", "Bluetooth"]
-        }
-      },
-      {
-        "id": "2009",
-        "title": "Massdrop THX AAA 789",
-        "description": "Reference Amplification",
-        "category": "amplifiers",
-        "manufacturer": "Massdrop",
-        "price": "$399",
-        "image_src": "../images/2009.jpg",
-        "information": "The Massdrop THX AAA 789 is a reference headphone amplifier designed with THX AAA technology for ultra-low distortion and high-fidelity audio. It is ideal for driving demanding headphones with precision and power.",
-        "specifications": {
-          "type": "Solid State",
-          "output_power": "6W RMS per channel (16 Ohms)",
-          "dac_chip": "N/A",
-          "frequency_response": { "min": "0 Hz", "max": "100,000 Hz" },
-          "inputs": ["XLR", "RCA"]
-        }
-      },
-      {
-        "id": "2010",
-        "title": "RME ADI-2 DAC FS",
-        "description": "Versatile DAC/Amp",
-        "category": "amplifiers",
-        "manufacturer": "RME",
-        "price": "$1,099",
-        "image_src": "../images/2010.jpg",
-        "information": "The RME ADI-2 DAC FS is a versatile DAC/Amp that combines excellent audio performance with a wide range of features, including parametric EQ and crossfeed. It is well-suited for both audiophiles and professional audio engineers.",
-        "specifications": {
-          "type": "DAC/Amp Combo",
-          "output_power": "32 Ohms: 950mW / 600 Ohms: 100mW",
-          "dac_chip": "AKM AK4493",
-          "frequency_response": { "min": "10 Hz", "max": "200,000 Hz" },
-          "inputs": ["XLR", "RCA", "Coaxial", "Optical", "USB", "Bluetooth"]
-        }
+        "type": "Open-back",
+        "driver_type": "Dynamic",
+        "impedance": "300 Ohms",
+        "frequency_response": {
+          "min": "4 Hz",
+          "max": "51,000 Hz"
+        },
+        "sensitivity": "102 dB SPL/1V RMS",
+        "bluetooth": "No"
       }
-    ]
-  }
-  
+    },
+    {
+      "id": "1002",
+      "title": "Audeze LCD-4",
+      "description": "Detailed Clarity",
+      "category": "Headphones",
+      "price": "$3,999",
+      "image_src": "https://i.imgur.com/PLt57U9.jpg",
+      "information": "The Audeze LCD-4 is a top-of-the-line planar magnetic headphone that delivers unparalleled detail and resolution. Its high-quality craftsmanship and premium materials ensure exceptional sound reproduction, making it a favorite among audio enthusiasts and professionals.",
+      "specifications": {
+        "manufacturer": "Audeze",
+        "type": "Open-back",
+        "driver_type": "Planar Magnetic",
+        "impedance": "200 Ohms",
+        "frequency_response": {
+          "min": "5 Hz",
+          "max": "20,000 Hz"
+        },
+        "sensitivity": "97 dB/1mW",
+        "bluetooth": "No"
+      }
+    },
+    {
+      "id": "1003",
+      "title": "Focal Utopia",
+      "description": "Reference Quality",
+      "category": "Headphones",
+      "price": "$3,999",
+      "image_src": "https://i.imgur.com/bt7vuIa.jpg",
+      "information": "Focal's Utopia is an open-back reference headphone designed for audiophiles and music lovers who seek nothing but the best. With its beryllium drivers, it provides exceptional dynamics, accuracy, and an immersive listening experience.",
+      "specifications": {
+        "manufacturer": "Focal",
+        "type": "Open-back",
+        "driver_type": "Beryllium",
+        "impedance": "80 Ohms",
+        "frequency_response": {
+          "min": "5 Hz",
+          "max": "50,000 Hz"
+        },
+        "sensitivity": "104 dB SPL/1mW",
+        "bluetooth": "No"
+      }
+    },
+    {
+      "id": "1004",
+      "title": "Beyerdynamic DT 1990 Pro",
+      "description": "Analytical Precision",
+      "category": "Headphones",
+      "price": "$699",
+      "image_src": "https://i.imgur.com/Ip0nNu9.jpg",
+      "information": "The Beyerdynamic DT 1990 Pro is a high-end open-back studio headphone known for its analytical sound signature and exceptional build quality. With its precise sound reproduction, it is an excellent choice for critical listening and professional use.",
+      "specifications": {
+        "manufacturer": "Beyerdynamic",
+        "type": "Open-back",
+        "driver_type": "Dynamic",
+        "impedance": "250 Ohms",
+        "frequency_response": {
+          "min": "5 Hz",
+          "max": "40,000 Hz"
+        },
+        "sensitivity": "102 dB SPL/1mW",
+        "bluetooth": "No"
+      }
+    },
+    {
+      "id": "1005",
+      "title": "Audeze LCD-X",
+      "description": "Balanced Planar",
+      "category": "Headphones",
+      "price": "$1,199",
+      "image_src": "https://i.imgur.com/kGgTmSg.jpg",
+      "information": "The Audeze LCD-X is a planar magnetic headphone that offers a balanced sound signature and high-level performance. Its accurate sound reproduction and comfortable design make it a popular choice among audiophiles and studio professionals.",
+      "specifications": {
+        "manufacturer": "Audeze",
+        "type": "Open-back",
+        "driver_type": "Planar Magnetic",
+        "impedance": "20 Ohms",
+        "frequency_response": {
+          "min": "10 Hz",
+          "max": "50,000 Hz"
+        },
+        "sensitivity": "103 dB/1mW",
+        "bluetooth": "No"
+      }
+    },
+    {
+      "id": "1006",
+      "title": "Bose QuietComfort 35 II",
+      "description": "Wireless Noise-Canceling",
+      "category": "Headphones",
+      "price": "$299",
+      "image_src": "https://i.imgur.com/fNM34lR.jpg",
+      "information": "The Bose QuietComfort 35 II is a popular wireless noise-canceling headphone that delivers superb comfort and excellent sound quality. Its noise-canceling technology ensures a peaceful listening experience in any environment.",
+      "specifications": {
+        "manufacturer": "Bose",
+        "type": "Closed-back",
+        "driver_type": "Dynamic",
+        "impedance": "32 Ohms",
+        "frequency_response": {
+          "min": "20 Hz",
+          "max": "20,000 Hz"
+        },
+        "sensitivity": "98 dB SPL/1mW",
+        "connectivity": "Wireless"
+      }
+    },
+    {
+      "id": "1007",
+      "title": "Audio-Technica ATH-M50x",
+      "description": "Professional Monitor",
+      "category": "Headphones",
+      "price": "$149",
+      "image_src": "../images/1007.jpg",
+      "information": "The Audio-Technica ATH-M50x is a professional studio monitor headphone known for its accurate sound reproduction and durability. It is favored by audio engineers and musicians for its exceptional performance and comfort.",
+      "specifications": {
+        "manufacturer": "Audio-Technica",
+        "type": "Closed-back",
+        "driver_type": "Dynamic",
+        "impedance": "38 Ohms",
+        "frequency_response": {
+          "min": "15 Hz",
+          "max": "28,000 Hz"
+        },
+        "sensitivity": "99 dB SPL/1mW",
+        "bluetooth": "No"
+      }
+    },
+    {
+      "id": "1008",
+      "title": "Sony WH-1000XM4",
+      "description": "Wireless ANC",
+      "category": "Headphones",
+      "price": "$349",
+      "image_src": "../images/1008.jpg",
+      "information": "The Sony WH-1000XM4 is a wireless headphone with advanced noise-canceling technology for immersive sound quality. It offers long battery life and smart features, making it an excellent choice for travel and daily use.",
+      "specifications": {
+        "manufacturer": "Sony",
+        "type": "Closed-back",
+        "driver_type": "Dynamic",
+        "impedance": "47 Ohms",
+        "frequency_response": {
+          "min": "4 Hz",
+          "max": "40,000 Hz"
+        },
+        "sensitivity": "105 dB SPL/1mW",
+        "connectivity": "Wireless"
+      }
+    },
+    {
+      "id": "1009",
+      "title": "Grado SR325e",
+      "description": "Dynamic and Punchy",
+      "category": "Headphones",
+      "price": "$295",
+      "image_src": "../images/1009.jpg",
+      "information": "The Grado SR325e is an open-back headphone known for its dynamic and punchy sound signature. With its retro design and high-quality materials, it provides a unique listening experience.",
+      "specifications": {
+        "manufacturer": "Grado",
+        "type": "Open-back",
+        "driver_type": "Dynamic",
+        "impedance": "32 Ohms",
+        "frequency_response": {
+          "min": "18 Hz",
+          "max": "24,000 Hz"
+        },
+        "sensitivity": "99.8 dB SPL/1mW",
+        "bluetooth": "No"
+      }
+    },
+    {
+      "id": "1010",
+      "title": "AKG K712 Pro",
+      "description": "Wide Soundstage",
+      "category": "Headphones",
+      "price": "$349",
+      "image_src": "../images/1010.jpg",
+      "information": "The AKG K712 Pro is an open-back headphone that offers a wide and immersive soundstage. It is engineered for precision listening and audiophile-grade sound quality.",
+      "specifications": {
+        "manufacturer": "AKG",
+        "type": "Open-back",
+        "driver_type": "Dynamic",
+        "impedance": "62 Ohms",
+        "frequency_response": {
+          "min": "10 Hz",
+          "max": "39,800 Hz"
+        },
+        "sensitivity": "105 dB SPL/1V RMS",
+        "bluetooth": "No"
+      }
+    },
+    {
+      "id": "1011",
+      "title": "Fostex TH-900 MK2",
+      "description": "Luxurious Sound",
+      "category": "Headphones",
+      "price": "$1,299",
+      "image_src": "../images/1011.jpg",
+      "information": "The Fostex TH-900 MK2 is a high-end closed-back headphone that offers luxurious sound quality and premium craftsmanship. Its biodynamic drivers provide excellent detail and resolution, making it a top choice for audiophiles.",
+      "specifications": {
+        "manufacturer": "Fostex",
+        "type": "Closed-back",
+        "driver_type": "Biodynamic",
+        "impedance": "25 Ohms",
+        "frequency_response": {
+          "min": "5 Hz",
+          "max": "45,000 Hz"
+        },
+        "sensitivity": "100 dB/mW",
+        "bluetooth": "No"
+      }
+    },
+    {
+      "id": "1012",
+      "title": "Meze Empyrean",
+      "description": "Natural Reproduction",
+      "category": "Headphones",
+      "price": "$2,999",
+      "image_src": "../images/1012.jpg",
+      "information": "The Meze Empyrean is a premium planar magnetic headphone known for its natural and engaging sound reproduction. It features a unique hybrid driver design and high-quality materials for exceptional comfort.",
+      "specifications": {
+        "manufacturer": "Meze",
+        "type": "Open-back",
+        "driver_type": "Planar Magnetic",
+        "impedance": "31.6 Ohms",
+        "frequency_response": {
+          "min": "4 Hz",
+          "max": "110,000 Hz"
+        },
+        "sensitivity": "100 dB/mW",
+        "bluetooth": "No"
+      }
+    },
+    {
+      "id": "1013",
+      "title": "Shure SRH1540",
+      "description": "Rich Bass",
+      "category": "Headphones",
+      "price": "$499",
+      "image_src": "../images/1013.jpg",
+      "information": "The Shure SRH1540 is a closed-back headphone with a focus on rich and deep bass response. Its lightweight design and premium Alcantara ear pads ensure comfort during long listening sessions.",
+      "specifications": {
+        "manufacturer": "Shure",
+        "type": "Closed-back",
+        "driver_type": "Dynamic",
+        "impedance": "46 Ohms",
+        "frequency_response": {
+          "min": "5 Hz",
+          "max": "25,000 Hz"
+        },
+        "sensitivity": "99 dB SPL/mW",
+        "bluetooth": "No"
+      }
+    },
+    {
+      "id": "1014",
+      "title": "Hifiman Sundara",
+      "description": "Detailed and Balanced",
+      "category": "Headphones",
+      "price": "$349",
+      "image_src": "../images/1014.jpg",
+      "information": "The Hifiman Sundara is an open-back planar magnetic headphone known for its detailed and balanced sound signature. It offers excellent clarity and resolution, making it a favorite among audiophiles and critical listeners.",
+      "specifications": {
+        "manufacturer": "Hifiman",
+        "type": "Open-back",
+        "driver_type": "Planar Magnetic",
+        "impedance": "37 Ohms",
+        "frequency_response": {
+          "min": "6 Hz",
+          "max": "75,000 Hz"
+        },
+        "sensitivity": "94 dB/mW",
+        "bluetooth": "No"
+      }
+    },
+    {
+      "id": "1015",
+      "title": "Audeze LCD-2 Classic",
+      "description": "Rich and Warm",
+      "category": "Headphones",
+      "price": "$799",
+      "image_src": "../images/1015.jpg",
+      "information": "The Audeze LCD-2 Classic is a planar magnetic headphone known for its rich and warm sound signature. It offers a smooth and natural sound reproduction, making it suitable for various genres of music.",
+      "specifications": {
+        "manufacturer": "Audeze",
+        "type": "Open-back",
+        "driver_type": "Planar Magnetic",
+        "impedance": "70 Ohms",
+        "frequency_response": {
+          "min": "10 Hz",
+          "max": "50,000 Hz"
+        },
+        "sensitivity": "101 dB/1mW",
+        "bluetooth": "No"
+      }
+    },
+    {
+      "id": "2001",
+      "title": "Schiit Magni 3+",
+      "description": "Versatile Amp",
+      "category": "Amplifiers",
+      "price": "$99",
+      "image_src": "../images/2001.jpg",
+      "information": "The Schiit Magni 3+ is a versatile headphone amplifier that provides clean and powerful output for a wide range of headphones. Its simple and compact design, along with its budget-friendly price, makes it a popular choice among audio enthusiasts.",
+      "specifications": {
+        "manufacturer": "Schiit",
+        "type": "Solid State",
+        "output_power": "2.8W RMS per channel (32 Ohms)",
+        "dac_chip": "N/A",
+        "frequency_response": {
+          "min": "20 Hz",
+          "max": "20,000 Hz"
+        },
+        "inputs": [
+          "RCA",
+          "3.5mm"
+        ]
+      }
+    },
+    {
+      "id": "2002",
+      "title": "FiiO E10K",
+      "description": "Affordable DAC/Amp",
+      "category": "Amplifiers",
+      "price": "$75",
+      "image_src": "../images/2002.jpg",
+      "information": "The FiiO E10K is an affordable DAC/Amp combo that offers improved audio quality for headphones and speakers. Its compact size and plug-and-play simplicity make it a great entry-level option for those looking to enhance their audio experience.",
+      "specifications": {
+        "manufacturer": "FiiO",
+        "type": "DAC/Amp Combo",
+        "output_power": "200mW (32 Ohms)",
+        "dac_chip": "TI PCM5102A",
+        "frequency_response": {
+          "min": "20 Hz",
+          "max": "20,000 Hz"
+        },
+        "inputs": [
+          "USB",
+          "Coaxial"
+        ]
+      }
+    },
+    {
+      "id": "2003",
+      "title": "JDS Labs Atom",
+      "description": "Transparent Sound",
+      "category": "Amplifiers",
+      "price": "$99",
+      "image_src": "../images/2003.jpg",
+      "information": "The JDS Labs Atom is a headphone amplifier that focuses on transparent and accurate sound reproduction. Its high-quality components and solid build ensure low distortion, making it an ideal choice for discerning listeners and audio professionals.",
+      "specifications": {
+        "manufacturer": "JDS Labs",
+        "type": "Solid State",
+        "output_power": "1W RMS per channel (32 Ohms)",
+        "dac_chip": "N/A",
+        "frequency_response": {
+          "min": "5 Hz",
+          "max": "40,000 Hz"
+        },
+        "inputs": [
+          "RCA",
+          "3.5mm"
+        ]
+      }
+    },
+    {
+      "id": "2004",
+      "title": "Audeze Deckard",
+      "description": "Class-A Amplification",
+      "category": "Amplifiers",
+      "price": "$699",
+      "image_src": "../images/2004.jpg",
+      "information": "The Audeze Deckard is a Class-A headphone amplifier with an integrated DAC, providing a high-quality audio experience. Its powerful and clean amplification is tailored to match Audeze headphones, delivering exceptional sound performance.",
+      "specifications": {
+        "manufacturer": "Audeze",
+        "type": "DAC/Amp Combo",
+        "output_power": "4W per channel (20 Ohms)",
+        "dac_chip": "AKM AK4490",
+        "frequency_response": {
+          "min": "10 Hz",
+          "max": "100,000 Hz"
+        },
+        "inputs": [
+          "USB",
+          "RCA"
+        ]
+      }
+    },
+    {
+      "id": "2005",
+      "title": "Sennheiser HDV 820",
+      "description": "High-End Performance",
+      "category": "Amplifiers",
+      "price": "$2,399",
+      "image_src": "../images/2005.jpg",
+      "information": "The Sennheiser HDV 820 is a high-end headphone amplifier designed to complement premium headphones. It offers a transparent and dynamic sound profile, making it an excellent choice for audiophiles who demand the best audio performance.",
+      "specifications": {
+        "manufacturer": "Sennheiser",
+        "type": "Solid State",
+        "output_power": "1000mW (300 Ohms)",
+        "dac_chip": "ESS Sabre32 DAC",
+        "frequency_response": {
+          "min": "0.3 Hz",
+          "max": "100,000 Hz"
+        },
+        "inputs": [
+          "XLR",
+          "RCA",
+          "USB",
+          "Optical",
+          "Coaxial"
+        ]
+      }
+    },
+    {
+      "id": "2006",
+      "title": "Chord Mojo",
+      "description": "Portable DAC/Amp",
+      "category": "Amplifiers",
+      "price": "$499",
+      "image_src": "../images/2006.jpg",
+      "information": "The Chord Mojo is a portable DAC/Amp that packs impressive audio performance in a small form factor. Its high-resolution sound and versatility make it a go-to choice for audiophiles on the move.",
+      "specifications": {
+        "manufacturer": "Chord",
+        "type": "DAC/Amp Combo",
+        "output_power": "720mW per channel (8 Ohms)",
+        "dac_chip": "Xilinx Artix-7 FPGA",
+        "frequency_response": {
+          "min": "20 Hz",
+          "max": "20,000 Hz"
+        },
+        "inputs": [
+          "USB",
+          "Optical",
+          "Coaxial",
+          "3.5mm"
+        ]
+      }
+    },
+    {
+      "id": "2007",
+      "title": "SPL Phonitor XE",
+      "description": "Studio Quality",
+      "category": "Amplifiers",
+      "price": "$1,799",
+      "image_src": "../images/2007.jpg",
+      "information": "The SPL Phonitor XE is a studio-quality headphone amplifier with Crossfeed technology for a speaker-like listening experience. It offers precise sound reproduction and a powerful headphone drive for professional use.",
+      "specifications": {
+        "manufacturer": "SPL",
+        "type": "Solid State",
+        "output_power": "2W RMS per channel (32 Ohms)",
+        "dac_chip": "N/A",
+        "frequency_response": {
+          "min": "4 Hz",
+          "max": "480,000 Hz"
+        },
+        "inputs": [
+          "XLR",
+          "RCA",
+          "6.35mm"
+        ]
+      }
+    },
+    {
+      "id": "2008",
+      "title": "IFI Audio Pro iDSD",
+      "description": "High-Resolution DAC/Amp",
+      "category": "Amplifiers",
+      "price": "$1,899",
+      "image_src": "../images/2008.jpg",
+      "information": "The IFI Audio Pro iDSD is a high-resolution DAC/Amp designed for audiophiles and music professionals. It offers a wide range of connectivity options and supports various audio formats.",
+      "specifications": {
+        "manufacturer": "IFI Audio",
+        "type": "DAC/Amp Combo",
+        "output_power": "4W (16 Ohms)",
+        "dac_chip": "Dual Burr-Brown DAC Chips",
+        "frequency_response": {
+          "min": "0.5 Hz",
+          "max": "500,000 Hz"
+        },
+        "inputs": [
+          "USB",
+          "Optical",
+          "Coaxial",
+          "AES/EBU",
+          "Bluetooth"
+        ]
+      }
+    },
+    {
+      "id": "2009",
+      "title": "Massdrop THX AAA 789",
+      "description": "Reference Amplification",
+      "category": "Amplifiers",
+      "price": "$399",
+      "image_src": "../images/2009.jpg",
+      "information": "The Massdrop THX AAA 789 is a reference headphone amplifier designed with THX AAA technology for ultra-low distortion and high-fidelity audio. It is ideal for driving demanding headphones with precision and power.",
+      "specifications": {
+        "manufacturer": "Massdrop",
+        "type": "Solid State",
+        "output_power": "6W RMS per channel (16 Ohms)",
+        "dac_chip": "N/A",
+        "frequency_response": {
+          "min": "0 Hz",
+          "max": "100,000 Hz"
+        },
+        "inputs": [
+          "XLR",
+          "RCA"
+        ]
+      }
+    },
+    {
+      "id": "2010",
+      "title": "RME ADI-2 DAC FS",
+      "description": "Versatile DAC/Amp",
+      "category": "Amplifiers",
+      "price": "$1,099",
+      "image_src": "../images/2010.jpg",
+      "information": "The RME ADI-2 DAC FS is a versatile DAC/Amp that combines excellent audio performance with a wide range of features, including parametric EQ and crossfeed. It is well-suited for both audiophiles and professional audio engineers.",
+      "specifications": {
+        "manufacturer": "RME",
+        "type": "DAC/Amp Combo",
+        "output_power": "32 Ohms: 950mW / 600 Ohms: 100mW",
+        "dac_chip": "AKM AK4493",
+        "frequency_response": {
+          "min": "10 Hz",
+          "max": "200,000 Hz"
+        },
+        "inputs": [
+          "XLR",
+          "RCA",
+          "Coaxial",
+          "Optical",
+          "USB",
+          "Bluetooth"
+        ]
+      }
+    }
+  ]
+}

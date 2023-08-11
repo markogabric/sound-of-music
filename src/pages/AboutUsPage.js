@@ -12,6 +12,7 @@ const TextColumnRight  = tw(Column)`md:ml-12 lg:ml-16 md:order-last`
 const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 
 const Heading = tw.div`text-4xl sm:text-5xl font-black tracking-wide text-center mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
+const Subheading = tw.div`font-bold text-primary-500 mb-4 text-center lg:text-left`;
 const Paragraph = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`
 
 export default function AboutUsPage() {
@@ -23,6 +24,7 @@ export default function AboutUsPage() {
                 </ImageColumn>
                 <TextColumnLeft>
                     <TextContent>
+                        <Subheading>About Us</Subheading>
                         <Heading>Our History</Heading>
                         <Paragraph>Welcome to our premier high-end headphone webshop, where a passion for superior sound quality and innovation has driven us since our inception. Established in 2010, we embarked on this journey with a vision to redefine the way people experience music and audio. Our founders, themselves audiophiles with a deep appreciation for fine craftsmanship, set out to curate a collection of headphones that embody the epitome of sonic excellence.</Paragraph>
                         <Paragraph>Over the years, our dedication to delivering exceptional audio experiences has guided us through milestones and challenges. We've collaborated with renowned audio engineers, partnered with leading technology manufacturers, and continuously evolved our offerings to stay at the forefront of the industry. From our humble beginnings to becoming a trusted name in high-end audio, our history is a testament to our commitment to quality, innovation, and customer satisfaction.</Paragraph>

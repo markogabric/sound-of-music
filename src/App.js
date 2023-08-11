@@ -8,6 +8,11 @@ import Testimonail from './components/Testimonail';
 import FAQ from './components/FAQ';
 import AboutUsPage from './pages/AboutUsPage';
 
+import SignIn from './auth/SignIn';
+import SignUp from './auth/SignUp';
+import AuthDetails from './auth/AuthDetails';
+
+
 function App() {
   return (
     <>
@@ -25,4 +30,9 @@ function App() {
   );
 }
 
+/**
+ *         <SignIn />
+        <SignUp />
+        <AuthDetails />
+ */
 export default App; 
