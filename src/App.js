@@ -11,6 +11,7 @@ import AboutUsPage from './pages/AboutUsPage';
 import SignIn from './auth/SignIn';
 import SignUp from './auth/SignUp';
 import AuthDetails from './auth/AuthDetails';
+import Filter from './Filter';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Testimonail />
         <FAQ />
         <AboutUsPage />
+        <Filter />
         <Footer />
       </div>
     </>

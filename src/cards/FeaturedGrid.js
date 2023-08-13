@@ -39,25 +39,6 @@ function FeaturedGrid() {
     const tabsKeys = Object.keys(tabs);
     const [activeTab, setActiveTab] = useState(tabsKeys[0]);
 
-    const [selectedFilters, setSelectedFilters] = useState({
-        manufacturer: [],
-        type: [],
-        driver_type: [],
-        bluetooth: [],
-        connectivity: []
-    })
-
-    const handleFilterChange = (filterName, value) => {
-        setSelectedFilters({
-            ...selectedFilters,
-            [filterName]: selectedFilters.includes(value)
-                ? selectedFilters[filterName].filter(product => product !== value)
-                : [...selectedFilters[filterName], value]
-        })
-    }
-
-    const productsList = applyFilters(selectedFilters)
-
     return (
         <Container>
             <ContentWithPaddingXl>
@@ -112,14 +93,5 @@ const getTabsFromProducts = () => {
 
     return tabs
 }
-
-const applyFilters = (filters) => {
-    return data.products.filter(product =>
-        Object.entries(filters).every(([filterType, selectedOptions]) =>
-            selectedOptions.length === 0 || selectedOptions.includes(product.specifications[filterType])
-        )
-    );
-}
-
 
 export default FeaturedGrid
