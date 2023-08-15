@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 import tw from 'twin.macro';
 import { FaHeadphones } from 'react-icons/fa';
 
@@ -67,21 +68,33 @@ function Navbar() {
   return (
     <Header className="header-light">
       <DesktopHeaderLinks /*css={collapseBreakpointCss.DesktopHeaderLinks}*/>
-        <LogoLink href="/" className=" p-2">
-          <FaHeadphones className="p-2 h-10 w-10 bg-primary-500 text-white" />
-          <LogoText>Sound of Music</LogoText>
-        </LogoLink>
+        <Link to="/">
+          <LogoLink href="/" className=" p-2">
+            <FaHeadphones className="p-2 h-10 w-10 bg-primary-500 text-white" />
+            <LogoText>Sound of Music</LogoText>
+          </LogoLink>
+        </Link>
         <NavLinks>
-          <NavLink href="/#">Products</NavLink>
-          <NavLink href="/#">Blog</NavLink>
-          <NavLink href="/#">About</NavLink>
-          <NavLink href="/#">Contact Us</NavLink>
-        <AuthLinks>
-          <NavLink href="/#">
-            Login
-          </NavLink>
-          <PrimaryLink href="/#">Sign Up</PrimaryLink>
-        </AuthLinks>
+          <Link to="/products" >
+            <NavLink>Products</NavLink>
+          </Link>
+          <Link to="/blog" >
+            <NavLink>Blog</NavLink>
+          </Link>
+          <Link to="/about" >
+            <NavLink>About</NavLink>
+          </Link>
+          <Link to="/faq" >
+            <NavLink>FAQ</NavLink>
+          </Link>
+          <AuthLinks>
+            <Link to="/login">
+              <NavLink>Login</NavLink>
+            </Link>
+            <Link to="/register">
+              <PrimaryLink>Sign Up</PrimaryLink>
+            </Link>
+          </AuthLinks>
         </NavLinks>
       </DesktopHeaderLinks>
     </Header>

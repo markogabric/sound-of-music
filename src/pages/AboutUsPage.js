@@ -7,8 +7,6 @@ const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 h-80 md:h-auto`;
 const TextColumnLeft = tw(Column)`md:w-7/12 mt-16 md:mt-0 md:mr-12 lg:mr-16 md:order-first`
 const TextColumnRight  = tw(Column)`md:ml-12 lg:ml-16 md:order-last`
-
-
 const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 
 const Heading = tw.div`text-4xl sm:text-5xl font-black tracking-wide text-center mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
