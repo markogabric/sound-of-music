@@ -22,10 +22,9 @@ export default function AboutUsPage() {
                 </ImageColumn>
                 <TextColumnLeft>
                     <TextContent>
-                        <Subheading>About Us</Subheading>
-                        <Heading>Our History</Heading>
-                        <Paragraph>Welcome to our premier high-end headphone webshop, where a passion for superior sound quality and innovation has driven us since our inception. Established in 2010, we embarked on this journey with a vision to redefine the way people experience music and audio. Our founders, themselves audiophiles with a deep appreciation for fine craftsmanship, set out to curate a collection of headphones that embody the epitome of sonic excellence.</Paragraph>
-                        <Paragraph>Over the years, our dedication to delivering exceptional audio experiences has guided us through milestones and challenges. We've collaborated with renowned audio engineers, partnered with leading technology manufacturers, and continuously evolved our offerings to stay at the forefront of the industry. From our humble beginnings to becoming a trusted name in high-end audio, our history is a testament to our commitment to quality, innovation, and customer satisfaction.</Paragraph>
+                        <Heading>Naša povijest</Heading>
+                        <Paragraph>Dobrodošli u vodeći webshop za visokokvalitetne slušalice, gdje nas strast prema izvanrednoj kvaliteti zvuka i inovacijama pokreće od našeg osnutka. Osnovani 2010. godine, krenuli smo na ovu putovanje s vizijom da ponovno definiramo način na koji ljudi doživljavaju glazbu i zvuk. Naši osnivači, sami audiofili s dubokim poštovanjem prema finoj izradi, odlučili su stvoriti kolekciju slušalica koje utjelovljuju vrhunac zvučne izvrsnosti.</Paragraph>
+                        <Paragraph>Tijekom godina, naša predanost pružanju iznimnih audio doživljaja vodila nas je kroz prekretnice i izazove. Surađivali smo s priznatim audio inženjerima, partnerirali s vodećim proizvođačima tehnologije i neprestano razvijali našu ponudu kako bismo ostali na čelu industrije. Od naših skromnih početaka do postajanja pouzdanim imenom u visokokvalitetnom zvuku, naša povijest svjedoči o našoj predanosti kvaliteti, inovacijama i zadovoljstvu korisnika.</Paragraph>
                     </TextContent>
                 </TextColumnLeft>
             </TwoColumn>
@@ -35,10 +34,10 @@ export default function AboutUsPage() {
                 </ImageColumn>
                 <TextColumnRight>
                     <TextContent>
-                        <Heading>Our Goals</Heading>
-                        <Paragraph>At Sound of Music, our goals are not just rooted in providing headphones; they are rooted in providing an unparalleled auditory journey. We aim to be more than just a marketplace - we're a destination for enthusiasts who demand nothing but the best. Our mission is to make the sublime world of high-end headphones accessible to everyone, transcending mere audio devices to become vessels of emotion, expression, and connection.</Paragraph>
-                        <Paragraph>We understand that our customers are diverse, with unique preferences and needs. That's why our goal is to curate a meticulously chosen selection of headphones that cater to various tastes and lifestyles. Whether you're an audiophile seeking the purest audio fidelity or a fashion-forward individual who values both style and substance, we're dedicated to offering a range of headphones that align with your desires.</Paragraph>
-                        <Paragraph>Beyond the products themselves, our commitment extends to creating an enriching shopping experience. We aspire to foster a community of audio enthusiasts who share insights, reviews, and knowledge, cultivating an environment where passion and expertise converge. With personalized customer support, detailed product information, and a seamless purchasing process, our goal is to make your journey with us as gratifying as the headphones you choose.</Paragraph>
+                        <Heading>Naši ciljevi</Heading>
+                        <Paragraph>U Sound of Music, naši ciljevi nisu samo ukorijenjeni u pružanju slušalica; ukorijenjeni su u pružanju neusporedive auditivne avanture. Težimo biti više od tržišta - mi smo odredište za entuzijaste koji zahtijevaju samo najbolje. Naša misija je učiniti uzvišeni svijet visokokvalitetnih slušalica dostupnim svima, transcendirajući obične audio uređaje da postanu posude emocija, izraza i povezanosti.</Paragraph>
+                        <Paragraph>Razumijemo da su naši kupci raznoliki, s jedinstvenim sklonostima i potrebama. Zato je naš cilj odabrati pomno odabranu selekciju slušalica koja zadovoljava različite ukuse i načine života. Bilo da ste audiofil koji traži najčišću audio vjernost ili osoba koja cijeni stil i suštinu, posvećeni smo ponudi raspona slušalica koje se usklađuju s vašim željama.</Paragraph>
+                        <Paragraph>Izvan samih proizvoda, naša predanost proširuje se na stvaranje obogaćujućeg iskustva kupovine. Težimo izgraditi zajednicu audio entuzijasta koji dijele uvide, recenzije i znanje, kultivirajući okruženje gdje se strast i stručnost spajaju. S personaliziranom podrškom korisnicima, detaljnim informacijama o proizvodima i besprijekornim postupkom kupovine, naš cilj je učiniti vaše putovanje s nama jednako zadovoljavajućim kao i slušalice koje odaberete.</Paragraph>
                     </TextContent>
                 </TextColumnRight>
             </TwoColumn>

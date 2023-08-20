@@ -47,22 +47,22 @@ function Hero() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const toggleModal = () => setModalIsOpen(!modalIsOpen);
 
-    const description = "Experience total audio bliss with Bose QuietComfort 45 headphones - unbeatable sound, no distractions.";
+    const description = "Doživite potpuni zvučni užitak s Bose QuietComfort 45 slušalicama - nevjerojatan zvuk, bez ometanja.";
     const watchVideoYoutubeUrl = "https://www.youtube.com/embed/qPx4_GuHI4w";
 
     return (
         <>
             <Container>
                 <LeftColumn>
-                    <Heading>Bose QuietComfort 45<HighlightedText>Now Available.</HighlightedText></Heading>
+                    <Heading>Bose QuietComfort 45<HighlightedText>Dostupne sada!</HighlightedText></Heading>
                     <Paragraph>{description}</Paragraph>
                     <Actions>
-                        <PrimaryButton as="a">Order now</PrimaryButton>
+                        <PrimaryButton as="a">Naruči odmah</PrimaryButton>
                         <WatchVideoButton onClick={toggleModal}>
                             <span className="playIconContainer">
                                 <FaPlay className="stroke-1 w-8 h-8 ml-4" />
                             </span>
-                            <span className="playText">Watch Video</span>
+                            <span className="playText">Pogledaj video</span>
                         </WatchVideoButton>
                     </Actions>
                 </LeftColumn>

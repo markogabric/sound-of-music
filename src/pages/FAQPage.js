@@ -37,50 +37,51 @@ const PrimaryButton = tw.button`font-bold px-8 lg:px-10 py-3 rounded bg-primary-
 const SubmitButton = tw(PrimaryButton)`inline-block mt-8`
 
 function FAQ() {
-  const faqs = [
-    {
-      question: "Which countries do you deliver to?",
-      answer: "We currently offer delivery to all countries within Europe."
-    },
-    {
-      question: "What is the estimated delivery time for my order?",
-      answer: "Delivery times vary based on your location within Europe. Typically, orders are delivered within 3-7 business days."
-    },
-    {
-      question: "What payment methods do you accept?",
-      answer: "We accept a range of payment methods, including major credit cards, PayPal, and direct bank transfers for your convenience."
-    },
-    {
-      question: "Can I track my order after it's been placed?",
-      answer: "Yes, once your order has been shipped, you'll receive a tracking number via email. You can use this to track your package's journey."
-    },
-    {
-      question: "What are the shipping charges for orders within Europe?",
-      answer: "Shipping charges are calculated based on your location and the weight of your order. You'll see the shipping cost during the checkout process before payment."
-    },
-    {
-      question: "What is your return policy?",
-      answer: "We have a hassle-free 30-day return policy. If you're not satisfied with your purchase, you can return it for a refund or exchange within 30 days of receiving your order."
-    },
-    {
-      question: "How do I initiate a return?",
-      answer: "To initiate a return, simply contact our customer support within the return window. We'll guide you through the process and provide you with a return authorization."
-    },
-    {
-      question: "Are there any items that cannot be returned?",
-      answer: "Most items can be returned, but certain products like in-ear earbuds may have specific return restrictions. Check our return policy for more details."
-    },
-    {
-      question: "Can I cancel my order after it's been placed?",
-      answer: "If your order hasn't been shipped yet, you can contact our customer support to request a cancellation. If the order has already been shipped, you can initiate a return once you receive it."
-    },
-    {
-      question: "Do you offer expedited shipping options?",
-      answer: "Yes, we offer expedited shipping for an additional fee. During the checkout process, you'll have the option to choose your preferred shipping speed."
-    }
-  ];
+    const faqs = [
+        {
+            question: "Kojim zemljama vršite dostavu?",
+            answer: "Trenutno nudimo dostavu u sve zemlje unutar Europe."
+        },
+        {
+            question: "Koliko je procijenjeno vrijeme dostave za moju narudžbu?",
+            answer: "Vrijeme dostave varira ovisno o vašoj lokaciji unutar Europe. Uobičajeno, narudžbe se dostavljaju unutar 3-7 radnih dana."
+        },
+        {
+            question: "Koje načine plaćanja prihvaćate?",
+            answer: "Prihvaćamo niz načina plaćanja, uključujući poznate kreditne kartice, PayPal i direktni bankovni prijenos radi vaše praktičnosti."
+        },
+        {
+            question: "Mogu li pratiti svoju narudžbu nakon što je naručena?",
+            answer: "Da, nakon što vaša narudžba bude poslana, primit ćete broj za praćenje putem e-pošte. Možete koristiti taj broj za praćenje putovanja vašeg paketa."
+        },
+        {
+            question: "Koliko iznose troškovi dostave?",
+            answer: "Troškovi dostave se izračunavaju na temelju vaše lokacije i težine vaše narudžbe. Troškovi dostave bit će vidljivi tijekom postupka plaćanja prije uplate."
+        },
+        {
+            question: "Koja je vaša politika povrata?",
+            answer: "Imamo politiku povrata u roku od 30 dana bez pitanja. Ako niste zadovoljni svojom kupnjom, možete je vratiti radi povrata novca ili zamjene unutar 30 dana od primitka narudžbe."
+        },
+        {
+            question: "Kako pokrenuti povrat?",
+            answer: "Da biste pokrenuli povrat, jednostavno kontaktirajte našu korisničku podršku unutar razdoblja za povrat. Vodit ćemo vas kroz postupak i pružiti vam ovlaštenje za povrat."
+        },
+        {
+            question: "Postoje li stavke koje se ne mogu vratiti?",
+            answer: "Većina stavki se može vratiti, ali određeni proizvodi poput in-ear slušalica mogu imati određena ograničenja za povrat. Provjerite našu politiku povrata za više detalja."
+        },
+        {
+            question: "Mogu li otkazati svoju narudžbu nakon što je naručena?",
+            answer: "Ako vaša narudžba još nije poslana, možete kontaktirati našu korisničku podršku i zatražiti otkazivanje. Ako je narudžba već poslana, možete pokrenuti povrat čim je primite."
+        },
+        {
+            question: "Nudite li mogućnosti ubrzanog slanja?",
+            answer: "Da, nudimo ubrzanu dostavu uz dodatnu naknadu. Tijekom postupka plaćanja imat ćete mogućnost odabrati svoju željenu brzinu dostave."
+        }
+    ];
+    
 
-  const description = "Here are some frequently asked questions about services. If you have a question that is not on this list, please feel free to contact us by filling out the support form down below."
+  const description = "Evo nekoliko često postavljanih pitanja o uslugama. Ako imate pitanje koje se ne nalazi na ovoj listi, slobodno nas kontaktirajte ispunjavanjem obrasca za podršku u nastavku."
 
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(null);
 
@@ -100,8 +101,7 @@ function FAQ() {
           </Column>
           <Column>
             <FAQContent>
-              <Subheading>FAQ</Subheading>
-              <Heading>Questions</Heading>
+              <Heading>Pitanja</Heading>
               <Description>{description}</Description>
               <FAQSContainer>
                 {faqs.map((faq, index) => (
@@ -136,13 +136,13 @@ function FAQ() {
           </Column>
         </TwoColumn>
         <FormArea>
-          <Heading>Submit you question here</Heading>
+          <Heading>Unesite svoje pitanje ovdje</Heading>
           <Form action="" method="">
-            <Input type="email" name="email" placeholder="Your Email Address" />
-            <Input type="text" name="name" placeholder="Full Name" />
-            <Input type="text" name="subject" placeholder="Subject" />
-            <Textarea name="message" placeholder="Your Message Here" />
-            <SubmitButton type="submit">Submit</SubmitButton>
+            <Input type="email" name="email" placeholder="Vaš Email" />
+            <Input type="text" name="name" placeholder="Puno ime" />
+            <Input type="text" name="subject" placeholder="Predmet" />
+            <Textarea name="message" placeholder="Vaša poruka" />
+            <SubmitButton type="submit">Pošalji</SubmitButton>
           </Form>
         </FormArea>
       </Content>

@@ -20,7 +20,7 @@ const ProductCard = ({index = 0, product}) => {
                     <CardTitle>{product.title}</CardTitle>
                     <CardContent>{product.description}</CardContent>
                     <CardPrice>{product.price}</CardPrice>
-                    <PrimaryButton>View Details</PrimaryButton>
+                    <PrimaryButton>Detalji</PrimaryButton>
                 </CardText>
             </Card>
         </CardContainer>

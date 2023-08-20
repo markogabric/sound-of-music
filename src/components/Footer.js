@@ -34,11 +34,11 @@ function Footer() {
             <LogoText>Sound of Music</LogoText>
           </LogoContainer>
           <LinksContainer>
-            <Link href="#">Home</Link>
-            <Link href="#">About</Link>
-            <Link href="#">Contact Us</Link>
+            <Link href="#">Početna</Link>
+            <Link href="#">Proizvodi</Link>
+            <Link href="#">O Nama</Link>
+            <Link href="#">FAQ</Link>
             <Link href="#">Blog</Link>
-            <Link href="#">Reviews</Link>
           </LinksContainer>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
@@ -52,7 +52,7 @@ function Footer() {
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>
-            &copy; Copyright {new Date().getFullYear()}, Treact Inc. All Rights Reserved.
+            &copy; Copyright {new Date().getFullYear()}, Sound of Music Inc. Sva prava pridržana.
           </CopyrightText>
         </Row>
       </Content>

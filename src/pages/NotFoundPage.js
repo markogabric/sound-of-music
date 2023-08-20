@@ -10,9 +10,9 @@ function NotFoundPage() {
   return (
     <div className="flex flex-col items-center justify-center p-16">
       <img src={image} alt="404" className="rounded-[2.5rem] max-w-144" />
-      <Message>Page Not Found.</Message>
+      <Message>Stranica nije pronađena.</Message>
       <Link to="/">
-        <PrimaryButton as="a">Go Back</PrimaryButton>
+        <PrimaryButton as="a">Natrag</PrimaryButton>
       </Link>
     </div>
   )

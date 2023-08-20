@@ -5,7 +5,7 @@ import { FaHeadphones } from 'react-icons/fa';
 
 const Header = tw.header`
   flex justify-between items-center
-  max-w-screen-xl mx-auto
+  max-w-screen-xl mx-auto pb-10
 `;
 
 export const LogoText = tw.h1`
@@ -17,7 +17,7 @@ export const DesktopHeaderLinks = tw.nav`
 `;
 
 export const NavLinks = tw.div`inline-block`;
-export const AuthLinks = tw.div`inline-block ml-12`;
+export const AuthLinks = tw.div`inline-block ml-6`;
 
 const NavLink = tw.a`
 text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
@@ -76,23 +76,23 @@ function Navbar() {
         </Link>
         <NavLinks>
           <Link to="/products" >
-            <NavLink>Products</NavLink>
+            <NavLink>Proizvodi</NavLink>
           </Link>
           <Link to="/blog" >
             <NavLink>Blog</NavLink>
           </Link>
           <Link to="/about" >
-            <NavLink>About</NavLink>
+            <NavLink>O Nama</NavLink>
           </Link>
           <Link to="/faq" >
             <NavLink>FAQ</NavLink>
           </Link>
           <AuthLinks>
             <Link to="/login">
-              <NavLink>Login</NavLink>
+              <NavLink>Prijava</NavLink>
             </Link>
             <Link to="/register">
-              <PrimaryLink>Sign Up</PrimaryLink>
+              <PrimaryLink>Registracija</PrimaryLink>
             </Link>
           </AuthLinks>
         </NavLinks>

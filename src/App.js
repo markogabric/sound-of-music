@@ -15,6 +15,8 @@ import SignUp from './auth/SignUp';
 import AuthDetails from './auth/AuthDetails';
 import Filter from './Filter';
 import NotFoundPage from './pages/NotFoundPage';
+import ProductPage from './pages/ProductPage';
+import ProductListPage from './pages/ProductListPage';
 
 function App() {
 
@@ -26,9 +28,11 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route path="/products" element={<ProductListPage />} />
             <Route path="/about" element={<AboutUsPage />} />
             <Route path="/faq" element={<FAQPage />} />
-            <Route path="*"element={<NotFoundPage />} />
+            <Route path="/product" element={<ProductPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
           <Footer />
         </Router>

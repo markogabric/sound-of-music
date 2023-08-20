@@ -9,8 +9,8 @@ import ProductCard from "./ProductCard";
 const Container = tw.div`relative`;
 const ContentWithPaddingXl = tw.div`max-w-screen-xl mx-auto py-20 lg:py-10`;
 const HeadingRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
-const Heading = tw.h2`text-4xl sm:text-5xl font-black tracking-wide text-center pr-8`;
-const HeadingItems = tw.div`flex justify-between`;
+const Heading = tw.h2`text-4xl sm:text-5xl font-black tracking-wide text-center sm:pr-8`;
+const HeadingItems = tw.div`flex justify-between flex-col sm:flex-row `;
 
 const TabsControl = tw.div`flex flex-wrap bg-gray-200 px-2 py-2 rounded leading-none mt-12 xl:mt-0`;
 
@@ -23,7 +23,7 @@ const TabControl = styled.div`
   }
 `;
 
-const TabContent = tw(motion.div)`bg-gray-200 mt-6 flex justify-evenly flex-wrap pb-10`;
+const TabContent = tw(motion.div)`mt-6 flex justify-evenly flex-wrap pb-10`;
 
 const CardText = tw.div`p-4 text-gray-900`;
 const CardTitle = tw.h5`text-lg font-semibold group-hover:text-primary-500 truncate`;
@@ -45,9 +45,9 @@ function FeaturedGrid() {
                 <HeadingRow>
                     <HeadingItems>
                         <Heading>
-                            Featured Items
+                            Istaknuti proizvodi
                         </Heading>
-                        <PrimaryButton>View All Products</PrimaryButton>
+                        <PrimaryButton>Vidi sve proizvode</PrimaryButton>
                     </HeadingItems>
                     <TabsControl>
                         {Object.keys(tabs).map((tabName, index) => (
@@ -88,8 +88,8 @@ function FeaturedGrid() {
 
 const getTabsFromProducts = () => {
     const tabs = {}
-    tabs["Headphones"] = data.products.filter(product => product.category === "Headphones").slice(0, 4);
-    tabs["Amplifiers"] = data.products.filter(product => product.category === "Amplifiers").slice(0, 4);
+    tabs["Slušalice"] = data.products.filter(product => product.category === "Headphones").slice(0, 4);
+    tabs["Pojačala"] = data.products.filter(product => product.category === "Amplifiers").slice(0, 4);
 
     return tabs
 }

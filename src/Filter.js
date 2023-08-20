@@ -74,7 +74,7 @@ function Filter() {
     return (
         <div className="flex flex-col">
             Select Manufacturer
-            {allManufacturerOptions.map(option => (
+            {getAllOptionsForFilter("manufacturer").map(option => (
                 <label key={option}>
                     <input
                         type="checkbox"
@@ -153,7 +153,7 @@ function Filter() {
                     placeholder="Min Price" />
                 <input
                     type="text"
-                    value={selectedRanges["price"][1] == Number.MAX_SAFE_INTEGER ? "" : selectedRanges["price"][1]}
+                    value={selectedRanges["price"][1] === Number.MAX_SAFE_INTEGER ? "" : selectedRanges["price"][1]}
                     onChange={(event) => handleRangeChange(event, "price", false)}
                     placeholder="Max Price" />
             </Actions>
@@ -162,19 +162,13 @@ function Filter() {
     )
 }
 
-/*const allTypeOptions = [...new Set(data.products.map(product => product.type))]
-const allDriverTypeOptions = [...new Set(data.products.map(product => product.driver_type))]
-const allConnectivityOptions = [...new Set(data.products.map(product => product.connectivity))]
-const allInputOptions = [...new Set(data.products.forEach(product => [...product.inputs.map(option => option)]))]
-
 const getAllOptionsForFilter = (filterName) => {
-    const allOptions = new Set()
-    if (Array.isArray(product[filterType])) {
-        (data.products.map(product => product[filterName])).map(options => ...options)
+    if (Array.isArray(data.products[filterName])) {
+        return [...new Set([].concat(...data.products.map(product => product[filterName])))]
     } else {
-        return 
+        return [...new Set(data.products.map(product => product[filterName]))]
     }
-}*/
+}
 
 const applyFilters = (filters, ranges) => {
     let filteredProducts = data.products.filter(product =>

@@ -17,30 +17,31 @@ function Testimonail() {
             imageSrc:
                 "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
             quote:
-                "Incredible headphone variety and top-notch service! My go-to destination for all my audio needs.",
+                "Nevjerojatna raznolikost slušalica i izvrsna usluga! Moj omiljeni izbor za sve moje audio potrebe.",
             customerName: "Jerry S."
         },
         {
             imageSrc:
                 "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
             quote:
-            "Impressed with the swift delivery and premium headphone quality. This webshop definitely exceeded my expectations!",
+                "Impresioniran brzom dostavom i premium kvalitetom slušalica. Ovaj dućan definitivno je premašio moja očekivanja!",
             customerName: "George C."
         },
         {
             imageSrc:
                 "https://images.unsplash.com/photo-1580852300654-03c803a14e24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4.25&w=512&h=512&q=80",
             quote:
-            "Exceptional shopping experience - the headphone collection is outstanding and the prices are unbeatable. Highly recommended.",
+                "Iznimno iskustvo kupovine - kolekcija slušalica je izvanredna, a cijene su nepobjedive. Toplo preporučam.",
             customerName: "Cosmo K."
         }
-    ]
+    ];
+    
 
 
     return (
         <Container>
             <ContentWithPaddingXl>
-                <Heading>Customer <HighlightedText>Reviews</HighlightedText></Heading>
+                <Heading>Recenzije <HighlightedText>naših klijenata</HighlightedText></Heading>
                 <Testimonials>
                     {testimonials.map((testimonial, index) => (
                         <TestimonialContainer key={index}>

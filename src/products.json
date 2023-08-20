@@ -3,287 +3,242 @@
     {
       "id": "1001",
       "title": "Sennheiser HD 800 S",
-      "description": "Clear Sound",
+      "description": "Čist zvuk",
       "category": "Headphones",
       "price": "$1,499",
       "image_src": "https://i.imgur.com/sqnFKhP.jpg",
-      "information": "The Sennheiser HD 800 S is an open-back over-ear headphone renowned for its outstanding soundstage and clarity. It offers audiophile-grade performance and excellent comfort, making it a top choice for discerning listeners.",
+      "information": "Sennheiser HD 800 S su slušalice otvorenog tipa prepoznate po izvanrednom zvučnom prostoru i jasnoći. Nude audiofilsku izvedbu i odličnu udobnost, čineći ih vrhunskim izborom za zahtjevne slušatelje.",
       "manufacturer": "Sennheiser",
       "type": "Open-back",
       "driver_type": "Dynamic",
       "impedance": "300 Ohms",
-      "frequency_response": {
-        "min": "4 Hz",
-        "max": "51,000 Hz"
-      },
+      "frequency_response": "4 Hz - 51,000 Hz",
       "sensitivity": "102 dB SPL/1V RMS",
-      "connectivity": "Wired"
+      "connectivity": "Žičane"
     },
     {
       "id": "1002",
       "title": "Audeze LCD-4",
-      "description": "Detailed Clarity",
+      "description": "Detaljni raspon",
       "category": "Headphones",
       "price": "$3,999",
       "image_src": "https://i.imgur.com/PLt57U9.jpg",
-      "information": "The Audeze LCD-4 is a top-of-the-line planar magnetic headphone that delivers unparalleled detail and resolution. Its high-quality craftsmanship and premium materials ensure exceptional sound reproduction, making it a favorite among audio enthusiasts and professionals.",
+      "information": "Audeze LCD-4 su vrhunske planarne magnetske slušalice koje pružaju neusporedivu detaljnost i razlučivost. Njihova visokokvalitetna izrada i premium materijali osiguravaju iznimnu reprodukciju zvuka, čineći ih omiljenim među audio entuzijastima i profesionalcima.",
       "manufacturer": "Audeze",
       "type": "Open-back",
       "driver_type": "Planar Magnetic",
       "impedance": "200 Ohms",
-      "frequency_response": {
-        "min": "5 Hz",
-        "max": "20,000 Hz"
-      },
+      "frequency_response": "5 Hz - 20,000 Hz",
       "sensitivity": "97 dB/1mW",
-      "connectivity": "Wired"
+      "connectivity": "Žičane"
     },
     {
       "id": "1003",
       "title": "Focal Utopia",
-      "description": "Reference Quality",
+      "description": "Referentna kvaliteta",
       "category": "Headphones",
       "price": "$3,999",
       "image_src": "https://i.imgur.com/bt7vuIa.jpg",
-      "information": "Focal's Utopia is an open-back reference headphone designed for audiophiles and music lovers who seek nothing but the best. With its beryllium drivers, it provides exceptional dynamics, accuracy, and an immersive listening experience.",
+      "information": "Focal's Utopia su otvorene referentne slušalice namijenjene audiofilima i ljubiteljima glazbe koji traže ništa osim najboljeg. S beryllium driverima, pružaju iznimnu dinamiku, preciznost i uronjeni doživljaj slušanja.",
       "manufacturer": "Focal",
       "type": "Open-back",
       "driver_type": "Beryllium",
       "impedance": "80 Ohms",
-      "frequency_response": {
-        "min": "5 Hz",
-        "max": "50,000 Hz"
-      },
+      "frequency_response": "5 Hz - 50,000 Hz",
       "sensitivity": "104 dB SPL/1mW",
-      "connectivity": "Wired"
+      "connectivity": "Žičane"
     },
     {
       "id": "1004",
       "title": "Beyerdynamic DT 1990 Pro",
-      "description": "Analytical Precision",
+      "description": "Analitička preciznost",
       "category": "Headphones",
       "price": "$699",
       "image_src": "https://i.imgur.com/Ip0nNu9.jpg",
-      "information": "The Beyerdynamic DT 1990 Pro is a high-end open-back studio headphone known for its analytical sound signature and exceptional build quality. With its precise sound reproduction, it is an excellent choice for critical listening and professional use.",
+      "information": "Beyerdynamic DT 1990 Pro su visokokvalitetne slušalice otvorenog tipa poznate po svom analitičkom zvučnom potpisu i iznimnoj kvaliteti izrade. S preciznom reprodukcijom zvuka, odličan su izbor za kritično slušanje i profesionalnu upotrebu.",
       "manufacturer": "Beyerdynamic",
       "type": "Open-back",
       "driver_type": "Dynamic",
       "impedance": "250 Ohms",
-      "frequency_response": {
-        "min": "5 Hz",
-        "max": "40,000 Hz"
-      },
+      "frequency_response": "5 Hz - 40,000 Hz",
       "sensitivity": "102 dB SPL/1mW",
-      "connectivity": "Wired"
+      "connectivity": "Žičane"
     },
     {
       "id": "1005",
       "title": "Audeze LCD-X",
-      "description": "Balanced Planar",
+      "description": "Balansirani planar",
       "category": "Headphones",
       "price": "$1,199",
       "image_src": "https://i.imgur.com/kGgTmSg.jpg",
-      "information": "The Audeze LCD-X is a planar magnetic headphone that offers a balanced sound signature and high-level performance. Its accurate sound reproduction and comfortable design make it a popular choice among audiophiles and studio professionals.",
+      "information": "Audeze LCD-X su planarne magnetske slušalice koje nude balansirani zvučni potpis i visoku izvedbu. S preciznom reprodukcijom zvuka i udobnim dizajnom, popularan su izbor među audiofilima i profesionalcima u studiju.",
       "manufacturer": "Audeze",
       "type": "Open-back",
       "driver_type": "Planar Magnetic",
       "impedance": "20 Ohms",
-      "frequency_response": {
-        "min": "10 Hz",
-        "max": "50,000 Hz"
-      },
+      "frequency_response": "10 Hz - 50,000 Hz",
       "sensitivity": "103 dB/1mW",
-      "connectivity": "Wired"
+      "connectivity": "Žičane"
     },
     {
       "id": "1006",
       "title": "Bose QuietComfort 35 II",
-      "description": "Wireless Noise-Canceling",
+      "description": "Noise-Cancelling bežične slušalice",
       "category": "Headphones",
       "price": "$299",
       "image_src": "https://i.imgur.com/fNM34lR.jpg",
-      "information": "The Bose QuietComfort 35 II is a popular wireless noise-canceling headphone that delivers superb comfort and excellent sound quality. Its noise-canceling technology ensures a peaceful listening experience in any environment.",
+      "information": "Bose QuietComfort 35 II su popularne bežične slušalice s tehnologijom za otklanjanje buke koje pružaju izvrsnu udobnost i odličnu kvalitetu zvuka. Njihova tehnologija za otklanjanje buke osigurava mirno iskustvo slušanja u svakom okruženju.",
       "manufacturer": "Bose",
       "type": "Closed-back",
       "driver_type": "Dynamic",
       "impedance": "32 Ohms",
-      "frequency_response": {
-        "min": "20 Hz",
-        "max": "20,000 Hz"
-      },
+      "frequency_response": "20 Hz - 20,000 Hz",
       "sensitivity": "98 dB SPL/1mW",
-      "connectivity": "Wireless"
+      "connectivity": "Bežične"
     },
     {
       "id": "1007",
       "title": "Audio-Technica ATH-M50x",
-      "description": "Professional Monitor",
+      "description": "Profesionalne monitorske slušalice",
       "category": "Headphones",
       "price": "$149",
       "image_src": "../images/1007.jpg",
-      "information": "The Audio-Technica ATH-M50x is a professional studio monitor headphone known for its accurate sound reproduction and durability. It is favored by audio engineers and musicians for its exceptional performance and comfort.",
+      "information": "Audio-Technica ATH-M50x su profesionalne monitore slušalice poznate po svojoj preciznoj reprodukciji zvuka i izdržljivosti. Omiljene su među tonskim inženjerima i glazbenicima zbog iznimne izvedbe i udobnosti.",
       "manufacturer": "Audio-Technica",
       "type": "Closed-back",
       "driver_type": "Dynamic",
       "impedance": "38 Ohms",
-      "frequency_response": {
-        "min": "15 Hz",
-        "max": "28,000 Hz"
-      },
+      "frequency_response": "15 Hz - 28,000 Hz",
       "sensitivity": "99 dB SPL/1mW",
-      "connectivity": "Wired"
+      "connectivity": "Žičane"
     },
     {
       "id": "1008",
       "title": "Sony WH-1000XM4",
-      "description": "Wireless ANC",
+      "description": "Bežični ANC",
       "category": "Headphones",
       "price": "$349",
       "image_src": "../images/1008.jpg",
-      "information": "The Sony WH-1000XM4 is a wireless headphone with advanced noise-canceling technology for immersive sound quality. It offers long battery life and smart features, making it an excellent choice for travel and daily use.",
+      "information": "Sony WH-1000XM4 su bežične slušalice s naprednom tehnologijom za otklanjanje buke za uronjeni kvalitet zvuka. Nude dugotrajnu bateriju i pametne značajke, čineći ih odličnim izborom za putovanja i svakodnevnu upotrebu.",
       "manufacturer": "Sony",
       "type": "Closed-back",
       "driver_type": "Dynamic",
       "impedance": "47 Ohms",
-      "frequency_response": {
-        "min": "4 Hz",
-        "max": "40,000 Hz"
-      },
+      "frequency_response": "4 Hz - 40,000 Hz",
       "sensitivity": "105 dB SPL/1mW",
-      "connectivity": "Wireless"
+      "connectivity": "Bežične"
     },
     {
       "id": "1009",
       "title": "Grado SR325e",
-      "description": "Dynamic and Punchy",
+      "description": "Dinamične i snažne",
       "category": "Headphones",
       "price": "$295",
       "image_src": "../images/1009.jpg",
-      "information": "The Grado SR325e is an open-back headphone known for its dynamic and punchy sound signature. With its retro design and high-quality materials, it provides a unique listening experience.",
+      "information": "Grado SR325e su otvorene slušalice poznate po svojem dinamičkom i snažnom zvučnom potpisu. S retro dizajnom i visokokvalitetnim materijalima pružaju jedinstveno iskustvo slušanja.",
       "manufacturer": "Grado",
       "type": "Open-back",
       "driver_type": "Dynamic",
       "impedance": "32 Ohms",
-      "frequency_response": {
-        "min": "18 Hz",
-        "max": "24,000 Hz"
-      },
+      "frequency_response": "18 Hz - 24,000 Hz",
       "sensitivity": "99 dB SPL/1mW",
-      "connectivity": "Wired"
+      "connectivity": "Žičane"
     },
     {
       "id": "1010",
       "title": "AKG K712 Pro",
-      "description": "Wide Soundstage",
+      "description": "Širok soundstage",
       "category": "Headphones",
       "price": "$349",
       "image_src": "../images/1010.jpg",
-      "information": "The AKG K712 Pro is an open-back headphone that offers a wide and immersive soundstage. It is engineered for precision listening and audiophile-grade sound quality.",
+      "information": "AKG K712 Pro su otvorene slušalice koje nude širok i uronjen zvučni prostor. Inženjerski su izrađene za precizno slušanje i audiofilsku kvalitetu zvuka.",
       "manufacturer": "AKG",
       "type": "Open-back",
       "driver_type": "Dynamic",
       "impedance": "62 Ohms",
-      "frequency_response": {
-        "min": "10 Hz",
-        "max": "39,800 Hz"
-      },
+      "frequency_response": "10 Hz - 39,800 Hz",
       "sensitivity": "105 dB SPL/1V RMS",
-      "connectivity": "Wired"
+      "connectivity": "Žičane"
     },
     {
       "id": "1011",
       "title": "Fostex TH-900 MK2",
-      "description": "Luxurious Sound",
+      "description": "Luksuzan zvuk",
       "category": "Headphones",
       "price": "$1,299",
       "image_src": "../images/1011.jpg",
-      "information": "The Fostex TH-900 MK2 is a high-end closed-back headphone that offers luxurious sound quality and premium craftsmanship. Its biodynamic drivers provide excellent detail and resolution, making it a top choice for audiophiles.",
+      "information": "Fostex TH-900 MK2 su visokokvalitetne zatvorene slušalice koje pružaju luksuznu kvalitetu zvuka i premium izradu. Njihovi biodinamički driveri pružaju izvrsne detalje i razlučivost, čineći ih vrhunskim izborom za audiofile.",
       "manufacturer": "Fostex",
       "type": "Closed-back",
       "driver_type": "Biodynamic",
       "impedance": "25 Ohms",
-      "frequency_response": {
-        "min": "5 Hz",
-        "max": "45,000 Hz"
-      },
+      "frequency_response": "5 Hz - 45,000 Hz",
       "sensitivity": "100 dB/mW",
-      "connectivity": "Wired"
+      "connectivity": "Žičane"
     },
     {
       "id": "1012",
       "title": "Meze Empyrean",
-      "description": "Natural Reproduction",
+      "description": "Prirodna reprodukcija",
       "category": "Headphones",
       "price": "$2,999",
       "image_src": "../images/1012.jpg",
-      "information": "The Meze Empyrean is a premium planar magnetic headphone known for its natural and engaging sound reproduction. It features a unique hybrid driver design and high-quality materials for exceptional comfort.",
+      "information": "Meze Empyrean su premium planarne magnetske slušalice poznate po svojoj prirodnoj i uključujućoj reprodukciji zvuka. Imaju jedinstveni hibridni dizajn drivera i visokokvalitetne materijale za iznimnu udobnost.",
       "manufacturer": "Meze",
       "type": "Open-back",
       "driver_type": "Planar Magnetic",
       "impedance": "36 Ohms",
-      "frequency_response": {
-        "min": "4 Hz",
-        "max": "110,000 Hz"
-      },
+      "frequency_response": "4 Hz - 110,000 Hz",
       "sensitivity": "100 dB/mW",
-      "connectivity": "Wired"
+      "connectivity": "Žičane"
     },
     {
       "id": "1013",
       "title": "Shure SRH1540",
-      "description": "Rich Bass",
+      "description": "Bogat bas",
       "category": "Headphones",
       "price": "$499",
       "image_src": "../images/1013.jpg",
-      "information": "The Shure SRH1540 is a closed-back headphone with a focus on rich and deep bass response. Its lightweight design and premium Alcantara ear pads ensure comfort during long listening sessions.",
+      "information": "Shure SRH1540 su zatvorene slušalice s naglaskom na bogat i dubok bas. Njihov lagani dizajn i premium jastučići od Alcantare osiguravaju udobnost tijekom dugih sesija slušanja.",
       "manufacturer": "Shure",
       "type": "Closed-back",
       "driver_type": "Dynamic",
       "impedance": "46 Ohms",
-      "frequency_response": {
-        "min": "5 Hz",
-        "max": "25,000 Hz"
-      },
+      "frequency_response": "5 Hz - 25,000 Hz",
       "sensitivity": "99 dB SPL/mW",
-      "connectivity": "Wired"
+      "connectivity": "Žičane"
     },
     {
       "id": "1014",
       "title": "Hifiman Sundara",
-      "description": "Detailed and Balanced",
+      "description": "Detaljne i balansirane",
       "category": "Headphones",
       "price": "$349",
       "image_src": "../images/1014.jpg",
-      "information": "The Hifiman Sundara is an open-back planar magnetic headphone known for its detailed and balanced sound signature. It offers excellent clarity and resolution, making it a favorite among audiophiles and critical listeners.",
+      "information": "Hifiman Sundara su otvorene planarne magnetske slušalice poznate po svojem detaljnom i balansiranom zvučnom potpisu. Nude izvrsnu jasnoću i razlučivost, što ih čini omiljenim izborom među audiofilima i kritičnim slušateljima.",
       "manufacturer": "Hifiman",
       "type": "Open-back",
       "driver_type": "Planar Magnetic",
       "impedance": "37 Ohms",
-      "frequency_response": {
-        "min": "6 Hz",
-        "max": "75,000 Hz"
-      },
+      "frequency_response": "6 Hz - 75,000 Hz",
       "sensitivity": "94 dB/mW",
-      "connectivity": "Wired"
+      "connectivity": "Žičane"
     },
     {
       "id": "1015",
       "title": "Audeze LCD-2 Classic",
-      "description": "Rich and Warm",
+      "description": "Bogat i topao zvuk",
       "category": "Headphones",
       "price": "$799",
       "image_src": "../images/1015.jpg",
-      "information": "The Audeze LCD-2 Classic is a planar magnetic headphone known for its rich and warm sound signature. It offers a smooth and natural sound reproduction, making it suitable for various genres of music.",
+      "information": "Audeze LCD-2 Classic su planarne magnetske slušalice poznate po bogatom i toplom zvučnom potpisu. Nude glatku i prirodnu reprodukciju zvuka, čineći ih pogodnim za razne glazbene žanrove.",
       "manufacturer": "Audeze",
       "type": "Open-back",
       "driver_type": "Planar Magnetic",
       "impedance": "70 Ohms",
-      "frequency_response": {
-        "min": "10 Hz",
-        "max": "50,000 Hz"
-      },
+      "frequency_response": "10 Hz - 50,000 Hz",
       "sensitivity": "101 dB/1mW",
-      "connectivity": "Wired"
+      "connectivity": "Žičane"
     },
     {
       "id": "2001",
@@ -297,10 +252,7 @@
       "type": "Solid State",
       "impedance": "32 Ohms",
       "dac_chip": "N/A",
-      "frequency_response": {
-        "min": "20 Hz",
-        "max": "20,000 Hz"
-      },
+      "frequency_response": "20 Hz - 20,000 Hz",
       "inputs": [
         "RCA",
         "3.5mm"
@@ -315,13 +267,10 @@
       "image_src": "../images/2002.jpg",
       "information": "The FiiO E10K is an affordable DAC/Amp combo that offers improved audio quality for headphones and speakers. Its compact size and plug-and-play simplicity make it a great entry-level option for those looking to enhance their audio experience.",
       "manufacturer": "FiiO",
-      "type": "DAC/Amp Combo",
+      "type": "DAC/Amp",
       "impedance": "32 Ohms",
       "dac_chip": "TI PCM5102A",
-      "frequency_response": {
-        "min": "20 Hz",
-        "max": "20,000 Hz"
-      },
+      "frequency_response": "20 Hz - 20,000 Hz",
       "inputs": [
         "USB",
         "Coaxial"
@@ -339,10 +288,7 @@
       "type": "Solid State",
       "impedance": "32 Ohms",
       "dac_chip": "N/A",
-      "frequency_response": {
-        "min": "5 Hz",
-        "max": "40,000 Hz"
-      },
+      "frequency_response": "5 Hz - 40,000 Hz",
       "inputs": [
         "RCA",
         "3.5mm"
@@ -357,13 +303,10 @@
       "image_src": "../images/2004.jpg",
       "information": "The Audeze Deckard is a Class-A headphone amplifier with an integrated DAC, providing a high-quality audio experience. Its powerful and clean amplification is tailored to match Audeze headphones, delivering exceptional sound performance.",
       "manufacturer": "Audeze",
-      "type": "DAC/Amp Combo",
+      "type": "DAC/Amp",
       "impedance": "20 Ohms",
       "dac_chip": "AKM AK4490",
-      "frequency_response": {
-        "min": "10 Hz",
-        "max": "100,000 Hz"
-      },
+      "frequency_response": "10 Hz - 100,000 Hz",
       "inputs": [
         "USB",
         "RCA"
@@ -381,10 +324,7 @@
       "type": "Solid State",
       "impedance": "300 Ohms",
       "dac_chip": "ESS Sabre32 DAC",
-      "frequency_response": {
-        "min": "0.3 Hz",
-        "max": "100,000 Hz"
-      },
+      "frequency_response": "0.3 Hz - 100,000 Hz",
       "inputs": [
         "XLR",
         "RCA",
@@ -402,13 +342,10 @@
       "image_src": "../images/2006.jpg",
       "information": "The Chord Mojo is a portable DAC/Amp that packs impressive audio performance in a small form factor. Its high-resolution sound and versatility make it a go-to choice for audiophiles on the move.",
       "manufacturer": "Chord",
-      "type": "DAC/Amp Combo",
+      "type": "DAC/Amp",
       "impedance": "8 Ohms",
       "dac_chip": "Xilinx Artix-7 FPGA",
-      "frequency_response": {
-        "min": "20 Hz",
-        "max": "20,000 Hz"
-      },
+      "frequency_response": "20 Hz - 20,000 Hz",
       "inputs": [
         "USB",
         "Optical",
@@ -428,10 +365,7 @@
       "type": "Solid State",
       "impedance": "32 Ohms",
       "dac_chip": "N/A",
-      "frequency_response": {
-        "min": "4 Hz",
-        "max": "480,000 Hz"
-      },
+      "frequency_response": "4 Hz - 480,000 Hz",
       "inputs": [
         "XLR",
         "RCA",
@@ -447,13 +381,10 @@
       "image_src": "../images/2008.jpg",
       "information": "The IFI Audio Pro iDSD is a high-resolution DAC/Amp designed for audiophiles and music professionals. It offers a wide range of connectivity options and supports various audio formats.",
       "manufacturer": "IFI Audio",
-      "type": "DAC/Amp Combo",
+      "type": "DAC/Amp",
       "impedance": "16 Ohms",
       "dac_chip": "Dual Burr-Brown DAC Chips",
-      "frequency_response": {
-        "min": "0.5 Hz",
-        "max": "500,000 Hz"
-      },
+      "frequency_response": "0.5 Hz - 500,000 Hz",
       "inputs": [
         "USB",
         "Optical",
@@ -474,10 +405,7 @@
       "type": "Solid State",
       "impedance": "16 Ohms",
       "dac_chip": "N/A",
-      "frequency_response": {
-        "min": "0 Hz",
-        "max": "100,000 Hz"
-      },
+      "frequency_response": "0 Hz - 100,000 Hz",
       "inputs": [
         "XLR",
         "RCA"
@@ -492,13 +420,10 @@
       "image_src": "../images/2010.jpg",
       "information": "The RME ADI-2 DAC FS is a versatile DAC/Amp that combines excellent audio performance with a wide range of features, including parametric EQ and crossfeed. It is well-suited for both audiophiles and professional audio engineers.",
       "manufacturer": "RME",
-      "type": "DAC/Amp Combo",
+      "type": "DAC/Amp",
       "impedance": "32 Ohms",
       "dac_chip": "AKM AK4493",
-      "frequency_response": {
-        "min": "10 Hz",
-        "max": "200,000 Hz"
-      },
+      "frequency_response": "10 Hz - 200,000 Hz",
       "inputs": [
         "XLR",
         "RCA",
