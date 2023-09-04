@@ -8,24 +8,18 @@ import data from "../products.json"
 
 const Container = tw.div`relative bg-primary-600 text-gray-100 -mx-8`;
 const TwoColumn = tw.div`flex flex-col md:flex-row`
-const ContentWithPaddingXl = tw.div`relative py-10 px-10 flex flex-col`;
+const Content = tw.div`relative py-10 px-10 flex flex-col`;
 const HeaderContainer = tw.div`mt-0 w-full md:w-72 flex flex-row items-center justify-center my-3`;
-const Subheading = tw.h5`font-bold text-primary-500 mb-4 text-gray-100`;
-const Heading = tw.h2`text-4xl sm:text-5xl font-black tracking-wide text-center pl-8 md:pl-0 w-full`;
 
 const FiltersContainer = motion(tw.dd`mt-6 flex flex-col items-center text-gray-900 font-medium`)
 const Filter = styled.div`
   ${tw`w-full bg-white rounded-lg shadow-sm px-6 my-8 flex flex-col justify-between mt-0`}
 `;
 
-//container: sm:px-6 md:px-8 
-//plan: 
-//options: xl:-mx-10 xl:p-10
-//header: flex flex-wrap flex-col sm:flex-row justify-center items-center  mr-3
-
-const FilterHeader = tw.div`flex flex-col items-center justify-center pt-4 lg:text-lg xl:text-xl font-bold uppercase tracking-wider`;
+const FilterHeader = tw.div`flex flex-col items-center justify-center py-4 lg:text-lg xl:text-xl font-bold uppercase tracking-wider`;
 const FilterOptions = styled.ul`
   ${tw`flex-1 border-t -mx-6 pb-6 px-4 `}
+  ${props => !props.visible && tw`hidden!`}
   .option {
     ${tw`flex items-start cursor-pointer mt-2 p-2 transition duration-300 hover:bg-gray-300`}
     .icon {
@@ -48,12 +42,12 @@ const TabControl = styled.div`
   }
 `;
 
-const TabContent = tw(motion.div)` bg-white w-full flex flex-wrap pb-10`;
+const TabContent = tw(motion.div)` bg-white w-full flex flex-wrap content-start justify-start pb-10 `;
 
 const PriceInputs = styled.div`
   ${tw`relative flex flex-row w-full justify-center text-center mb-6`}
   input {
-    ${tw`md:max-w-40 w-full pl-4 py-3 first:rounded-l-full last:rounded-r-full border-2 font-medium transition duration-300  focus:border-primary-500 hover:border-gray-500`}
+    ${tw`md:max-w-40 w-full pl-4 py-3 first:rounded-l-full text-black last:rounded-r-full border-2 font-medium transition duration-300  focus:border-primary-500 hover:border-gray-500`}
   }
 `;
 
@@ -120,7 +114,7 @@ export default ({
 
     const handleRangeChange = (event, rangeType, isMin) => {
         let value = event.target.value
-        if (!value) {
+        if (value === "") {
             value = isMin ? 0 : Number.MAX_SAFE_INTEGER
         }
         setSelectedRanges({
@@ -129,7 +123,6 @@ export default ({
                 selectedRanges[rangeType] = [value, selectedRanges[rangeType][1]] :
                 selectedRanges[rangeType] = [selectedRanges[rangeType][0], value]
         })
-        console.log("!!! Selected ranges", selectedRanges)
     }
 
     const clearFiltesAndRanges = () => {
@@ -161,8 +154,7 @@ export default ({
     return (
         <Container>
             <TwoColumn>
-                <ContentWithPaddingXl>
-                    
+                <Content>
                     <TabsControl>
                             {Object.entries(tabs).map(([key, value]) => (
                                 <TabControl key={value} active={activeTab === key} onClick={() => setActiveTab(key)}>
@@ -201,7 +193,7 @@ export default ({
                                         <span className="name">{filterNames[filterName]}</span>
                                     </span>
                                 </FilterHeader>
-                                <FilterOptions>
+                                <FilterOptions visible={isMenuVisible}>
                                     {getAllOptionsForFilter(activeTab, filterName).map((option, index) => (
                                         <li className="option" key={index} onClick={() => handleFilterChange(activeTab, filterName, option)}>
                                             {(isOptionChecked(activeTab, filterName, option)) ? (<FaCheckCircle className="icon" />) : (<FaCircle className="icon" />)}
@@ -212,7 +204,7 @@ export default ({
                             </Filter>
                         ))}
                     </FiltersContainer>
-                </ContentWithPaddingXl>
+                </Content>
                 <TabContent>
                     {productsList.map((card, index) => (
                         <ProductCard index={index} product={card} />
@@ -249,7 +241,6 @@ const applyFilters = (filterType, filters, ranges) => {
     filteredProducts = filteredProducts.filter(product =>
         Object.entries(ranges).every(([rangeType, selectedRange]) => {
             let value = parseInt(product[rangeType].replace(/[$,]/g, ''), 10);
-            //console.log(rangeType, selectedRange, value)
             return value >= selectedRange[0] && value <= selectedRange[1]
         }
         )

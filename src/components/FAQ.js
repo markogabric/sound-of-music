@@ -33,8 +33,7 @@ const Input = tw.input`mt-6 first:mt-0 border-b-2 py-3 focus:outline-none font-m
 const Textarea = styled(Input).attrs({ as: "textarea" })`
   ${tw`h-24`}
 `
-const PrimaryButton = tw.button`font-bold px-8 lg:px-10 py-3 rounded bg-primary-500 text-gray-100 hocus:bg-primary-700 focus:shadow-outline focus:outline-none transition duration-300`;
-const SubmitButton = tw(PrimaryButton)`inline-block mt-8`
+const SubmitButton = tw.button`inline-block mt-8 font-bold px-8 lg:px-10 py-3 rounded bg-primary-500 text-gray-100 hocus:bg-primary-700 focus:shadow-outline focus:outline-none transition duration-300`;
 
 function FAQ() {
   const faqs = [

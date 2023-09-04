@@ -2,17 +2,17 @@ import React from "react";
 import tw from "twin.macro";
 
 const Container = tw.div`relative`;
-const ContentWithPaddingXl= tw.div`max-w-screen-xl mx-auto py-20 lg:py-20`;
+const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-20`;
 const Heading = tw.h2`text-4xl sm:text-5xl font-black tracking-wide text-center`;
-const Testimonials = tw.div`flex flex-col lg:flex-row items-center lg:items-stretch`;
-const TestimonialContainer = tw.div`mt-16 lg:w-1/3`;
-const Testimonial = tw.div`px-4 text-center max-w-xs mx-auto flex flex-col items-center`;
+const Reviews = tw.div`flex flex-col lg:flex-row items-center lg:items-stretch`;
+const ReviewContainer = tw.div`mt-16 lg:w-1/3`;
+const ReviewPost = tw.div`px-4 text-center max-w-xs mx-auto flex flex-col items-center`;
 const Quote = tw.blockquote`mt-5 text-gray-600 font-medium leading-loose`;
 const CustomerName = tw.p`mt-5 text-gray-900 font-semibold uppercase text-sm tracking-wide`;
 const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
 
-function Testimonail() {
-    const testimonials = [
+function Review() {
+    const reviews = [
         {
             imageSrc:
                 "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
@@ -40,21 +40,21 @@ function Testimonail() {
 
     return (
         <Container>
-            <ContentWithPaddingXl>
+            <Content>
                 <Heading>Recenzije <HighlightedText>naših klijenata</HighlightedText></Heading>
-                <Testimonials>
-                    {testimonials.map((testimonial, index) => (
-                        <TestimonialContainer key={index}>
-                            <Testimonial>
-                                <Quote>"{testimonial.quote}"</Quote>
-                                <CustomerName>- {testimonial.customerName}</CustomerName>
-                            </Testimonial>
-                        </TestimonialContainer>
+                <Reviews>
+                    {reviews.map((review, index) => (
+                        <ReviewContainer key={index}>
+                            <ReviewPost>
+                                <Quote>"{review.quote}"</Quote>
+                                <CustomerName>- {review.customerName}</CustomerName>
+                            </ReviewPost>
+                        </ReviewContainer>
                     ))}
-                </Testimonials>
-            </ContentWithPaddingXl>
+                </Reviews>
+            </Content>
         </Container>
     )
 }
 
-export default Testimonail
+export default Review

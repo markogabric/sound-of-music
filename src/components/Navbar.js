@@ -1,102 +1,94 @@
-import React from 'react'
-import { Link } from "react-router-dom"
+import React, { useState, useEffect } from 'react'
+import { Link, useLocation } from "react-router-dom"
 import tw from 'twin.macro';
-import { FaHeadphones } from 'react-icons/fa';
+import styled from "styled-components";
+import { FaHeadphones, FaBars } from 'react-icons/fa';
 
 const Header = tw.header`
   flex justify-between items-center
   max-w-screen-xl mx-auto pb-10
 `;
 
-export const LogoText = tw.h1`
+const LogoText = tw.h1`
 ml-4
 `
 
-export const DesktopHeaderLinks = tw.nav`
-  hidden lg:flex flex-1 justify-between items-center
+const HeaderLinks = tw.nav`
+  flex flex-col lg:flex-row flex-1 justify-between items-center gap-1
 `;
 
-export const NavLinks = tw.div`inline-block`;
-export const AuthLinks = tw.div`inline-block ml-6`;
+const NavLinksContainer = styled.div`
+  ${tw`md:flex`}
+  ${props => !props.visible && tw`hidden`}
+`
+
+const NavLinks = styled.div`
+${tw`inline-block flex md:flex-row flex-col justify-between gap-2 md:gap-1`}
+`;
+
+const AuthLinks = tw.div`inline-block my-4 gap-4 md:gap-0 md:ml-6 md:my-0 flex md:flex-row flex-col`;
 
 const NavLink = tw.a`
-text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
-font-semibold tracking-wide transition duration-300
+my-2 text-sm mx-6 my-0
+font-semibold tracking-wide transition duration-300 whitespace-nowrap
 pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-500
 `
 
-export const PrimaryLink = tw(NavLink)`
-  lg:mx-0
+const PrimaryLink = tw(NavLink)`
   px-8 py-3 rounded bg-primary-500 text-gray-100
   hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline
   border-b-0
 `;
 
 export const LogoLink = tw(NavLink)`
-  flex items-center font-black border-b-0 text-2xl! ml-0!`;
-
-const defaultLinks = [
-
-]
-
-/*const collapseBreakPointCssMap = {
-  sm: {
-    mobileNavLinks: tw`sm:hidden`,
-    DesktopHeaderLinks: tw`sm:flex`,
-    mobileNavLinksContainer: tw`sm:hidden`
-  },
-  md: {
-    mobileNavLinks: tw`md:hidden`,
-    DesktopHeaderLinks: tw`md:flex`,
-    mobileNavLinksContainer: tw`md:hidden`
-  },
-  lg: {
-    mobileNavLinks: tw`lg:hidden`,
-    DesktopHeaderLinks: tw`lg:flex`,
-    mobileNavLinksContainer: tw`lg:hidden`
-  },
-  xl: {
-    mobileNavLinks: tw`lg:hidden`,
-    DesktopHeaderLinks: tw`lg:flex`,
-    mobileNavLinksContainer: tw`lg:hidden`
-  }
-};*/
+  flex items-center font-black border-b-0 text-2xl!`;
 
 function Navbar() {
-  /*const collapseBreakpointCss = collapseBreakPointCssMap["lg"];*/
+  const { pathname } = useLocation();
+  const [isMenuVisible, setIsMenuVisible] = useState(false)
+
+  useEffect(() => {
+    setIsMenuVisible(false);
+    console.log("NAVBAR");
+  }, [pathname]);
 
   return (
     <Header className="header-light">
-      <DesktopHeaderLinks /*css={collapseBreakpointCss.DesktopHeaderLinks}*/>
-        <Link to="/">
-          <LogoLink href="/" className=" p-2">
-            <FaHeadphones className="p-2 h-10 w-10 bg-primary-500 text-white" />
-            <LogoText>Sound of Music</LogoText>
-          </LogoLink>
-        </Link>
-        <NavLinks>
-          <Link to="/products" >
-            <NavLink>Proizvodi</NavLink>
+      <HeaderLinks>
+        <div className="flex flex-row items-center">
+          <Link to="/">
+            <LogoLink href="/" className=" p-2">
+              <FaHeadphones className="p-2 h-10 w-10 bg-primary-500 text-white" />
+              <LogoText>Sound of Music</LogoText>
+            </LogoLink>
           </Link>
-          <Link to="/blog" >
-            <NavLink>Blog</NavLink>
-          </Link>
-          <Link to="/about" >
-            <NavLink>O Nama</NavLink>
-          </Link>
-          <Link to="/faq" >
-            <NavLink>FAQ</NavLink>
-          </Link>
-          <AuthLinks>
-            <Link to="/login">
-              <NavLink>Prijava</NavLink>
+          <FaBars className="w-8 h-8 md:hidden ml-2" onClick={() => setIsMenuVisible(!isMenuVisible)} />
+        </div>
+        <NavLinksContainer visible={isMenuVisible}>
+          <NavLinks>
+            <Link to="/products" >
+              <NavLink>Proizvodi</NavLink>
             </Link>
-            <Link to="/register">
-              <PrimaryLink>Registracija</PrimaryLink>
+            <Link to="/blog" >
+              <NavLink>Blog</NavLink>
             </Link>
-          </AuthLinks>
-        </NavLinks>
-      </DesktopHeaderLinks>
+            <Link to="/about" >
+              <NavLink>O Nama</NavLink>
+            </Link>
+            <Link to="/faq" >
+              <NavLink>FAQ</NavLink>
+            </Link>
+            <AuthLinks>
+              <Link to="/login">
+                <NavLink>Prijava</NavLink>
+              </Link>
+              <Link to="/register">
+                <PrimaryLink>Registracija</PrimaryLink>
+              </Link>
+            </AuthLinks>
+          </NavLinks>
+        </NavLinksContainer>
+      </HeaderLinks>
     </Header>
   )
 }

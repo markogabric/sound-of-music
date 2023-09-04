@@ -1,9 +1,9 @@
 import React from "react";
 import tw from "twin.macro";
-import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
 import data from "../products.json"
 import { FaTruck, FaCheckCircle } from "react-icons/fa";
+import { useParams } from "react-router-dom";
+import NotFoundPage from './NotFoundPage';
 
 const Container = tw.div`relative flex flex-col items-center`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto pt-20 md:pt-24`;
@@ -15,41 +15,41 @@ const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 
 const Subheading = tw.h5`font-bold text-primary-500 text-center md:text-left`;
 const Manufacturer = tw.a` underline`;
-const Heading = tw.h2`text-4xl sm:text-5xl font-black tracking-wide text-center mt-1 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
+const Heading = tw.h2`text-4xl sm:text-5xl font-black tracking-wide text-center mt-1 font-black text-left text-3xl sm:text-4xl lg:text-5xl md:text-left leading-tight`;
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
-const Statistics = tw.div`flex flex-col items-center sm:block text-center md:text-left mt-4`;
-const Statistic = tw.div`text-left sm:inline-block sm:mr-12 last:mr-0 mt-4`;
-const Value = tw.div`font-bold text-lg sm:text-xl lg:text-2xl text-secondary-500 tracking-wide`;
-const Key = tw.div`flex items-center font-medium text-primary-700`;
+const PriceInfo = tw.div`flex flex-col items-center sm:block text-center md:text-left mt-4`;
+const Price = tw.div`text-left sm:inline-block sm:mr-12 last:mr-0 mt-4`;
+const PriceAmount = tw.div`font-bold text-lg sm:text-xl lg:text-2xl text-secondary-500 tracking-wide`;
+const Delivery = tw.div`flex items-center font-medium text-primary-700`;
 const Specifications = tw.div`flex flex-col items-start max-w-screen-xl lg:w-full my-20 select-none px-8 sm:px-10 py-5 sm:py-4 rounded-lg text-gray-800`;
 const SpecificationsHeader = tw.span`text-lg lg:text-xl font-semibold mb-3`;
 const SpecificationsText = tw.span`flex flex-row items-center pointer-events-none text-sm sm:text-base leading-relaxed`
 
 const PrimaryButton = tw.button`px-8 py-3 font-bold rounded bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline focus:outline-none transition duration-300 mt-8 md:mt-8 text-sm inline-block mx-auto md:mx-0`;
 
-export default ({
-    product = null
-}) => {
-    const specs = getSpecifications(data.products[0])
-    getNextWorkday()
+export default () => {
+    const params = useParams()
+    const product = data.products.find(product => product["id"] === params.id)
+    if(!product) return (<NotFoundPage />)
+    const specs = getSpecifications(product)
     return (
         <Container>
             <TwoColumn>
                 <ImageColumn>
-                    <img src="https://i.imgur.com/Ip0nNu9.jpg" alt="" />
+                    <img src={product.image_src} alt="" />
                 </ImageColumn>
                 <TextColumn>
                     <TextContent>
-                        <Subheading><Manufacturer>{data.products[0].manufacturer}</Manufacturer></Subheading>
-                        <Heading>{data.products[0].title}</Heading>
-                        <Description>{data.products[0].information}</Description>
-                        <Statistics>
-                            <Statistic>
-                                <Value>{data.products[0].price}</Value>
-                                <Key><FaTruck className="mr-2" />Besplatna dostava</Key>
-                            </Statistic>
-                        </Statistics>
+                        <Subheading><Manufacturer>{product.manufacturer}</Manufacturer></Subheading>
+                        <Heading>{product.title}</Heading>
+                        <Description>{product.information}</Description>
+                        <PriceInfo>
+                            <Price>
+                                <PriceAmount>{product.price}</PriceAmount>
+                                <Delivery><FaTruck className="mr-2" />Besplatna dostava</Delivery>
+                            </Price>
+                        </PriceInfo>
                         <PrimaryButton as="a" href="">
                             Dodaj u košaricu
                         </PrimaryButton>
@@ -86,19 +86,4 @@ const getSpecifications = (product) => {
     }
 
     return specs
-}
-
-const getNextWorkday = () => {
-    const date = new Date()
-    const today = date.getDay()
-
-    if (today - 4 > 0) {
-        date.setDate(date.getDate() + (4 - (today - 4)))
-    } else {
-        date.setDate(date.getDate() + 1)
-    }
-
-    console.log(date.toLocaleDateString("en-GB", {weekday: "long", month: "numeric", day:"numeric"}))
-
-    return 1
 }

@@ -2,16 +2,15 @@ import React from "react";
 import tw from "twin.macro";
 
 const Container = tw.div`relative`;
-const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-8 md:py-12`;
+const TwoColumn = tw.div`flex flex-col lg:flex-row lg:justify-between justify-center items-center lg:items-start max-w-screen-xl mx-auto pb-8 md:pb-12`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
-const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 h-80 md:h-auto`;
-const TextColumnLeft = tw(Column)`md:w-7/12 mt-16 md:mt-0 md:mr-12 lg:mr-16 md:order-first`
-const TextColumnRight  = tw(Column)`md:ml-12 lg:ml-16 md:order-last`
-const TextContent = tw.div`lg:py-8 text-center md:text-left`;
+const ImageColumn = tw(Column)`lg:w-5/12 hidden lg:flex flex-shrink-0 h-80 md:h-auto`;
+const TextColumnLeft = tw(Column)`md:w-7/12 lg:mt-6 md:mt-0 lg:mr-16 md:order-first`
+const TextColumnRight  = tw(Column)`md:w-7/12 lg:ml-16 md:order-last`
+const TextContent = tw.div`lg:py-8 text-center lg:text-left`;
 
-const Heading = tw.div`text-4xl sm:text-5xl font-black tracking-wide text-center mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
-const Subheading = tw.div`font-bold text-primary-500 mb-4 text-center lg:text-left`;
-const Paragraph = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`
+const Heading = tw.div`text-4xl font-black tracking-wide text-center mt-4 lg:text-5xl lg:text-left leading-tight`;
+const Paragraph = tw.p`mt-4 text-center lg:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`
 
 export default function AboutUsPage() {
     return (

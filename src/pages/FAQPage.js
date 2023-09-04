@@ -33,8 +33,9 @@ const Input = tw.input`mt-6 first:mt-0 border-b-2 py-3 focus:outline-none font-m
 const Textarea = styled(Input).attrs({ as: "textarea" })`
   ${tw`h-24`}
 `
-const PrimaryButton = tw.button`font-bold px-8 lg:px-10 py-3 rounded bg-primary-500 text-gray-100 hocus:bg-primary-700 focus:shadow-outline focus:outline-none transition duration-300`;
-const SubmitButton = tw(PrimaryButton)`inline-block mt-8`
+const SubmitButton = tw.button`inline-block mt-8 w-full font-bold px-8 lg:px-10 py-3 rounded bg-primary-500 text-gray-100 hover:bg-primary-700 focus:shadow-outline transition duration-300`;
+
+const SubmitMessage = tw.p`w-full mt-4 font-light text-center text-primary-600`
 
 function FAQ() {
     const faqs = [
@@ -84,6 +85,22 @@ function FAQ() {
   const description = "Evo nekoliko često postavljanih pitanja o uslugama. Ako imate pitanje koje se ne nalazi na ovoj listi, slobodno nas kontaktirajte ispunjavanjem obrasca za podršku u nastavku."
 
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(null);
+  const [isMessageSubmitted, setIsMessageSubmitted] = useState(false);
+  const [emailValue, setEmailValue] = useState("")
+  const [nameValue, setNameValue] = useState("")
+  const [subjectValue, setSubjectValue] = useState("")
+  const [messageValue, setMessageValue] = useState("")
+
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+
+    setEmailValue("")
+    setNameValue("")
+    setSubjectValue("")
+    setMessageValue("")
+    setIsMessageSubmitted(true)
+  }
 
   const toggleQuestion = questionIndex => {
     if (activeQuestionIndex === questionIndex)
@@ -137,13 +154,14 @@ function FAQ() {
         </TwoColumn>
         <FormArea>
           <Heading>Unesite svoje pitanje ovdje</Heading>
-          <Form action="" method="">
-            <Input type="email" name="email" placeholder="Vaš Email" />
-            <Input type="text" name="name" placeholder="Puno ime" />
-            <Input type="text" name="subject" placeholder="Predmet" />
-            <Textarea name="message" placeholder="Vaša poruka" />
-            <SubmitButton type="submit">Pošalji</SubmitButton>
+          <Form onSubmit={handleSubmit} action="" method="">
+            <Input type="email" name="email" value={emailValue} onChange={(event) => setEmailValue(event.target.value)} placeholder="Vaš Email" />
+            <Input type="text" name="name" value={nameValue} onChange={(event) => setNameValue(event.target.value)}  placeholder="Puno ime" />
+            <Input type="text" name="subject" value={subjectValue} onChange={(event) => setSubjectValue(event.target.value)}  placeholder="Predmet" />
+            <Textarea name="message" value={messageValue} onChange={(event) => setMessageValue(event.target.value)}  placeholder="Vaša poruka" />
+            <SubmitButton>Pošalji</SubmitButton>
           </Form>
+          {isMessageSubmitted && <SubmitMessage>Vaša poruka je poslana, odgovoriti ćemo Vam na vašu e-mail adresu u što kraćem roku!</SubmitMessage>}
         </FormArea>
       </Content>
     </Container>

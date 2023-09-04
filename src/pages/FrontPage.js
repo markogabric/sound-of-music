@@ -1,16 +1,16 @@
 import React from "react";
 import Hero from '../components/Hero';
 import FeaturedGrid from '../cards/FeaturedGrid';
-import Testimonail from '../components/Testimonail';
+import Review from '../components/Review';
 
-function LandingPage() {
+function FrontPage() {
   return (
     <>
         <Hero />
         <FeaturedGrid />
-        <Testimonail />
+        <Review />
     </>
   );
 }
 
-export default LandingPage; 
+export default FrontPage; 

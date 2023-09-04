@@ -34,7 +34,7 @@ function Footer() {
             <LogoText>Sound of Music</LogoText>
           </LogoContainer>
           <LinksContainer>
-            <Link href="#">Početna</Link>
+            <Link href="/">Početna</Link>
             <Link href="#">Proizvodi</Link>
             <Link href="#">O Nama</Link>
             <Link href="#">FAQ</Link>
@@ -44,11 +44,11 @@ function Footer() {
             <SocialLink href="https://facebook.com">
               <FaFacebook />
             </SocialLink>
-            <SocialLink href="https://twitter.com">
-              <FaTwitter />
-            </SocialLink>
             <SocialLink href="https://youtube.com">
               <FaYoutube />
+            </SocialLink>
+            <SocialLink href="https://tvline.com/wp-content/uploads/2023/07/sesame-street-letter-x-twitter.png">
+              <FaTwitter />
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>
