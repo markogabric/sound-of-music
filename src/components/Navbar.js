@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useLocation } from "react-router-dom"
+import { Link, useLocation, useNavigate } from "react-router-dom"
 import tw from 'twin.macro';
 import styled from "styled-components";
-import { FaHeadphones, FaBars } from 'react-icons/fa';
+import { FaHeadphones, FaBars, FaCartPlus } from 'react-icons/fa';
+import { useDispatch, useSelector } from 'react-redux';
+import { logOut } from '../features/userSlice';
+import { signOut } from 'firebase/auth';
+import { auth } from '../firebase';
 
 const Header = tw.header`
   flex justify-between items-center
@@ -23,7 +27,7 @@ const NavLinksContainer = styled.div`
 `
 
 const NavLinks = styled.div`
-${tw`inline-block flex md:flex-row flex-col justify-between gap-2 md:gap-1`}
+${tw`inline-block flex md:flex-row flex-col justify-between gap-2 md:gap-1 items-center`}
 `;
 
 const AuthLinks = tw.div`inline-block my-4 gap-4 md:gap-0 md:ml-6 md:my-0 flex md:flex-row flex-col`;
@@ -44,13 +48,22 @@ export const LogoLink = tw(NavLink)`
   flex items-center font-black border-b-0 text-2xl!`;
 
 function Navbar() {
+  const navigate = useNavigate()
   const { pathname } = useLocation();
+  const dispatch = useDispatch()
+
   const [isMenuVisible, setIsMenuVisible] = useState(false)
+  const user = useSelector((state) => state.data.user.user)
 
   useEffect(() => {
     setIsMenuVisible(false);
-    console.log("NAVBAR");
   }, [pathname]);
+
+  const handleLogout = () => {
+    dispatch(logOut())
+    signOut(auth)
+    navigate('/hey')
+  }
 
   return (
     <Header className="header-light">
@@ -79,13 +92,19 @@ function Navbar() {
               <NavLink>FAQ</NavLink>
             </Link>
             <AuthLinks>
-              <Link to="/login">
+              {!user && <Link to="/login">
                 <NavLink>Prijava</NavLink>
-              </Link>
-              <Link to="/register">
-                <PrimaryLink>Registracija</PrimaryLink>
-              </Link>
+              </Link>}
+              {!user && <Link to="/register">
+                <PrimaryLink>Registracija</PrimaryLink> 
+              </Link>}
+              {user && <Link>
+                <NavLink  onClick={handleLogout}>Odjava</NavLink>
+              </Link>}
             </AuthLinks>
+            <Link to="/cart">
+                <FaCartPlus className="my-3 w-8 h-8 self-start transition cursor-pointer duration-300 hover:text-primary-500"></FaCartPlus>
+            </Link>
           </NavLinks>
         </NavLinksContainer>
       </HeaderLinks>

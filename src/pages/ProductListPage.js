@@ -240,15 +240,15 @@ const applyFilters = (filterType, filters, ranges) => {
 
     filteredProducts = filteredProducts.filter(product =>
         Object.entries(ranges).every(([rangeType, selectedRange]) => {
-            let value = parseInt(product[rangeType].replace(/[$,]/g, ''), 10);
+            let value = parseInt(product[rangeType].replace(/[€,]/g, ''), 10);
             return value >= selectedRange[0] && value <= selectedRange[1]
         }
         )
     )
 
     filteredProducts.sort((a, b) => {
-        let productA = parseInt(a["price"].replace(/[$,]/g, ''), 10);
-        let productB = parseInt(b["price"].replace(/[$,]/g, ''), 10);
+        let productA = parseInt(a["price"].replace(/[€,]/g, ''), 10);
+        let productB = parseInt(b["price"].replace(/[€,]/g, ''), 10);
         return (productA < productB) ? -1 : (productA > productB) ? 1 : 0;
     });
 

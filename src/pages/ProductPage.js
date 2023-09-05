@@ -2,8 +2,10 @@ import React from "react";
 import tw from "twin.macro";
 import data from "../products.json"
 import { FaTruck, FaCheckCircle } from "react-icons/fa";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import NotFoundPage from './NotFoundPage';
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../features/cartSlice";
 
 const Container = tw.div`relative flex flex-col items-center`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto pt-20 md:pt-24`;
@@ -29,10 +31,21 @@ const SpecificationsText = tw.span`flex flex-row items-center pointer-events-non
 const PrimaryButton = tw.button`px-8 py-3 font-bold rounded bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline focus:outline-none transition duration-300 mt-8 md:mt-8 text-sm inline-block mx-auto md:mx-0`;
 
 export default () => {
+    const dispatch = useDispatch()
     const params = useParams()
     const product = data.products.find(product => product["id"] === params.id)
+
     if(!product) return (<NotFoundPage />)
     const specs = getSpecifications(product)
+    const cart = useSelector((state) => state.data.cart.cartList)
+    const cartCount = useSelector((state) => state.data.cart.cartCount)
+
+    const handleAddToCart = () => {
+        dispatch(addToCart(product))
+        console.log(cart)
+        console.log(cartCount)
+    }
+
     return (
         <Container>
             <TwoColumn>
@@ -50,9 +63,11 @@ export default () => {
                                 <Delivery><FaTruck className="mr-2" />Besplatna dostava</Delivery>
                             </Price>
                         </PriceInfo>
-                        <PrimaryButton as="a" href="">
+                        <Link to="/cart">
+                            <PrimaryButton onClick={handleAddToCart}>
                             Dodaj u košaricu
                         </PrimaryButton>
+                        </Link>
                     </TextContent>
                 </TextColumn>
             </TwoColumn>

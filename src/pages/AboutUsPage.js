@@ -17,7 +17,7 @@ export default function AboutUsPage() {
         <Container>
             <TwoColumn>
                 <ImageColumn>
-                    <img src="https://i.imgur.com/EKpsMdB.jpg" alt="About us" className="shadow hidden lg:block rounded bg-center mt-16"/>
+                    <img src="https://i.imgur.com/b5x0ocU.jpg" alt="About us" className="shadow hidden lg:block rounded bg-center mt-16"/>
                 </ImageColumn>
                 <TextColumnLeft>
                     <TextContent>
@@ -29,7 +29,7 @@ export default function AboutUsPage() {
             </TwoColumn>
             <TwoColumn>
                 <ImageColumn>
-                    <img src="https://i.imgur.com/EKpsMdB.jpg" alt="About us" className="shadow hidden lg:block rounded bg-center mt-16"/>
+                    <img src="https://i.imgur.com/Mrb1ks8.jpg" alt="About us" className="shadow hidden lg:block rounded bg-center mt-16"/>
                 </ImageColumn>
                 <TextColumnRight>
                     <TextContent>
