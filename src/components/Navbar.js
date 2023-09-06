@@ -30,12 +30,12 @@ const NavLinks = styled.div`
 ${tw`inline-block flex md:flex-row flex-col justify-between gap-2 md:gap-1 items-center`}
 `;
 
-const AuthLinks = tw.div`inline-block my-4 gap-4 md:gap-0 md:ml-6 md:my-0 flex md:flex-row flex-col`;
+const AuthLinks = tw.div`inline-block my-4 gap-4 md:gap-0 md:ml-6 md:my-0 flex md:flex-row flex-col items-center`;
 
-const NavLink = tw.a`
+const NavLink = tw(Link)`
 my-2 text-sm mx-6 my-0
 font-semibold tracking-wide transition duration-300 whitespace-nowrap
-pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-500
+pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-500 hocus:border-primary-500
 `
 
 const PrimaryLink = tw(NavLink)`
@@ -79,25 +79,13 @@ function Navbar() {
         </div>
         <NavLinksContainer visible={isMenuVisible}>
           <NavLinks>
-            <Link to="/products" >
-              <NavLink>Proizvodi</NavLink>
-            </Link>
-            <Link to="/blog" >
-              <NavLink>Blog</NavLink>
-            </Link>
-            <Link to="/about" >
-              <NavLink>O Nama</NavLink>
-            </Link>
-            <Link to="/faq" >
-              <NavLink>FAQ</NavLink>
-            </Link>
+              <NavLink to="/products">Proizvodi</NavLink>
+              <NavLink to="/blog">Blog</NavLink>
+              <NavLink to="/about">O Nama</NavLink>
+              <NavLink to="/faq">FAQ</NavLink>
             <AuthLinks>
-              {!user && <Link to="/login">
-                <NavLink>Prijava</NavLink>
-              </Link>}
-              {!user && <Link to="/register">
-                <PrimaryLink>Registracija</PrimaryLink> 
-              </Link>}
+              {!user && <NavLink to="/login">Prijava</NavLink>}
+              {!user && <PrimaryLink to="/register">Registracija</PrimaryLink> }
               {user && <Link>
                 <NavLink  onClick={handleLogout}>Odjava</NavLink>
               </Link>}
